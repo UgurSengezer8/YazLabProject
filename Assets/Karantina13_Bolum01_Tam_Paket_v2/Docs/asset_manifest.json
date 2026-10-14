@@ -1,0 +1,323 @@
+{
+  "project": "KARANTINA-13",
+  "package": "Bolum 01 Tam Paket",
+  "characters": {
+    "player": {
+      "sheet": "player",
+      "cols": 5,
+      "rows": 4,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_order": [
+        "idle",
+        "step1",
+        "pass1",
+        "step2",
+        "pass2"
+      ]
+    },
+    "robot": {
+      "sheet": "robot",
+      "cols": 5,
+      "rows": 4,
+      "directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "frame_order": [
+        "idle",
+        "hover1",
+        "turn",
+        "hover2",
+        "turn_alt"
+      ]
+    }
+  },
+  "animationSheets": {
+    "electric_barrier": {
+      "grid": "2x2",
+      "folder": "Assets/Karantina13/Animations/ElectricBarrier"
+    },
+    "sliding_door": {
+      "grid": "2x2",
+      "folder": "Assets/Karantina13/Animations/SlidingDoor"
+    },
+    "evidence_terminal": {
+      "grid": "2x2",
+      "folder": "Assets/Karantina13/Animations/EvidenceTerminal"
+    },
+    "ark13_core": {
+      "grid": "2x2",
+      "folder": "Assets/Karantina13/Animations/Ark13Core"
+    }
+  },
+  "environmentComponents": [
+    {
+      "index": 0,
+      "bbox": [
+        48,
+        81,
+        251,
+        287
+      ],
+      "file": "Tiles/floor_clean_metal.png"
+    },
+    {
+      "index": 1,
+      "bbox": [
+        276,
+        81,
+        483,
+        287
+      ],
+      "file": "Tiles/floor_worn_metal.png"
+    },
+    {
+      "index": 2,
+      "bbox": [
+        500,
+        81,
+        711,
+        289
+      ],
+      "file": "Tiles/floor_caution.png"
+    },
+    {
+      "index": 3,
+      "bbox": [
+        735,
+        81,
+        951,
+        289
+      ],
+      "file": "Tiles/floor_electric_hazard.png"
+    },
+    {
+      "index": 4,
+      "bbox": [
+        986,
+        81,
+        1192,
+        287
+      ],
+      "file": "Tiles/glow_light_tile.png"
+    },
+    {
+      "index": 5,
+      "bbox": [
+        1232,
+        89,
+        1394,
+        281
+      ],
+      "file": "Props/warning_sign.png"
+    },
+    {
+      "index": 6,
+      "bbox": [
+        982,
+        329,
+        1192,
+        519
+      ],
+      "file": "Tiles/door_sliding_open.png"
+    },
+    {
+      "index": 7,
+      "bbox": [
+        1205,
+        332,
+        1431,
+        520
+      ],
+      "file": "Tiles/door_blast_locked.png"
+    },
+    {
+      "index": 8,
+      "bbox": [
+        754,
+        339,
+        966,
+        519
+      ],
+      "file": "Tiles/door_sliding_closed.png"
+    },
+    {
+      "index": 9,
+      "bbox": [
+        238,
+        342,
+        382,
+        518
+      ],
+      "file": "Tiles/wall_corner.png"
+    },
+    {
+      "index": 10,
+      "bbox": [
+        397,
+        342,
+        610,
+        520
+      ],
+      "file": "Tiles/wall_t_junction.png"
+    },
+    {
+      "index": 11,
+      "bbox": [
+        628,
+        342,
+        733,
+        507
+      ],
+      "file": "Tiles/wall_end_cap.png"
+    },
+    {
+      "index": 12,
+      "bbox": [
+        19,
+        345,
+        223,
+        510
+      ],
+      "file": "Tiles/wall_straight.png"
+    },
+    {
+      "index": 13,
+      "bbox": [
+        577,
+        565,
+        778,
+        754
+      ],
+      "file": "Props/evidence_terminal_static.png"
+    },
+    {
+      "index": 14,
+      "bbox": [
+        355,
+        585,
+        532,
+        753
+      ],
+      "file": "Props/computer_terminal.png"
+    },
+    {
+      "index": 15,
+      "bbox": [
+        1029,
+        585,
+        1129,
+        759
+      ],
+      "file": "Props/barrel.png"
+    },
+    {
+      "index": 16,
+      "bbox": [
+        1174,
+        597,
+        1417,
+        759
+      ],
+      "file": "Props/lab_table.png"
+    },
+    {
+      "index": 17,
+      "bbox": [
+        52,
+        599,
+        162,
+        750
+      ],
+      "file": "Props/switch_lever.png"
+    },
+    {
+      "index": 18,
+      "bbox": [
+        198,
+        599,
+        298,
+        750
+      ],
+      "file": "Props/wall_control_panel.png"
+    },
+    {
+      "index": 19,
+      "bbox": [
+        818,
+        599,
+        996,
+        750
+      ],
+      "file": "Props/crate.png"
+    },
+    {
+      "index": 20,
+      "bbox": [
+        518,
+        776,
+        888,
+        1025
+      ],
+      "file": "Props/ark13_core_center.png"
+    },
+    {
+      "index": 21,
+      "bbox": [
+        344,
+        785,
+        496,
+        1025
+      ],
+      "file": "Props/ark13_side_left.png"
+    },
+    {
+      "index": 22,
+      "bbox": [
+        931,
+        787,
+        1075,
+        1025
+      ],
+      "file": "Props/ark13_side_right.png"
+    }
+  ],
+  "map": "Assets/Karantina13/Map/level01_complete_map.png",
+  "suggestedSettings": {
+    "unityPixelsPerUnit": "32 or 64 depending on scene scale",
+    "filterMode": "Point (no filter)",
+    "compression": "None",
+    "suggestedFPS": {
+      "player_walk": 8,
+      "robot_hover": 7,
+      "electric_barrier": 10,
+      "sliding_door": 8,
+      "evidence_terminal": 6,
+      "ark13_core": 6
+    }
+  },
+  "mapCoreFolder": "Assets/Karantina13/MapCore",
+  "mapCoreFiles": [
+    "Assets/Karantina13/MapCore/Floor_Clean_Metal.png",
+    "Assets/Karantina13/MapCore/Floor_Worn_Metal.png",
+    "Assets/Karantina13/MapCore/Floor_Caution.png",
+    "Assets/Karantina13/MapCore/Floor_Electric_Hazard.png",
+    "Assets/Karantina13/MapCore/Glow_Light_Tile.png",
+    "Assets/Karantina13/MapCore/Wall_Straight.png",
+    "Assets/Karantina13/MapCore/Wall_Corner.png",
+    "Assets/Karantina13/MapCore/Wall_T_Junction.png",
+    "Assets/Karantina13/MapCore/Wall_End_Cap.png",
+    "Assets/Karantina13/MapCore/Door_Sliding_Closed.png",
+    "Assets/Karantina13/MapCore/Door_Sliding_Open.png",
+    "Assets/Karantina13/MapCore/Door_Blast_Locked.png",
+    "Assets/Karantina13/MapCore/MapCore_Preview.png",
+    "Assets/Karantina13/MapCore/MapCore_Tileset.png"
+  ]
+}
