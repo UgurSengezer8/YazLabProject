@@ -2,42 +2,96 @@ using System;
 using System.Net.Http;
 using System.Text;
 using Cysharp.Threading.Tasks;
-using Unity.VisualScripting;
 using Newtonsoft.Json;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Networking;
+using static UnityEngine.Audio.ProcessorInstance;
 
 
 public class NPCConnectionLLM : MonoBehaviour
 {
+    public static NPCConnectionLLM instance;
     private int[] npcMemory = null;
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
     public void Start()
     {
-        ConnectionLLM(" hi whats up").Forget();
+        
+        ConnectionLLM("merhaba").Forget();
     }
-    private async UniTask ConnectionLLM(string mesaj)
+   
+    
+    public async UniTask<Response> ConnectionLLM(string mesaj)
     {
         
         string url = "http://localhost:11434/api/generate";
 
+
         RequestModel requestmodel = new RequestModel
         {
-            model = "llama3.2:1b",
+            model = "gemma2:2b",
             prompt = mesaj,
-            system= "You are a surly and suspicious orc guard standing watch at the door of a dark dungeon. Always respond to the player in a rude and threatening manner. Generate a response only in the requested JSON format; do not provide any other explanation.your name is hank",
+            system= "Karanlık bir zindanın kapısında nöbet tutan aksi ve şüpheci bir ork muhafızısın. Oyuncuya her zaman kaba ve tehditkar bir şekilde cevap ver. Yalnızca istenen JSON formatında yanıt üret; başka hiçbir açıklama yapma. Adın Hank.",
             stream = false,
             context = null
+        };
+        Response _response = new Response
+        {
+            done = false,
+            context = null,
+            response = ""
         };
 
         string JsonRequest = JsonConvert.SerializeObject(requestmodel);
         Debug.Log(JsonRequest);
         var icerik = new StringContent(JsonRequest, Encoding.UTF8, "application/json");
-        using (HttpClient client = new HttpClient())
+        using (UnityWebRequest request = UnityWebRequest.PostWwwForm(url , JsonRequest))
         {
-            var response = await client.PostAsync(url, icerik);
-            string jsonCevap = await response.Content.ReadAsStringAsync();
-            Response sonuc = JsonConvert.DeserializeObject<Response>(jsonCevap);
-            npcMemory = sonuc.context;
-            Console.WriteLine("NPC Cevabı: " + sonuc.response);
+            request.timeout = 5;
+
+            request.method = "POST";
+
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(JsonRequest);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+
+            try
+            {
+                await request.SendWebRequest();
+                if (request.result == UnityWebRequest.Result.ConnectionError)
+                {
+                    Debug.LogError("Ollama'ya bağlanılamadı!");
+                    return _response;
+                }
+                else if (request.result == UnityWebRequest.Result.ProtocolError)
+                {
+                    Debug.LogError($"Ollama API Hatası: {request.responseCode} - {request.error}");
+                    return _response;
+                }
+                string jsonResponse = request.downloadHandler.text;
+                _response = JsonConvert.DeserializeObject<Response>(jsonResponse);
+                npcMemory = _response.context;
+                Debug.Log("NPC Cevabı: " + _response.response);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+            return _response;
         }
 
     }
