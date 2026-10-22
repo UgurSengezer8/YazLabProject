@@ -11,8 +11,18 @@ using static UnityEngine.Audio.ProcessorInstance;
 
 public class NPCConnectionLLM : MonoBehaviour
 {
+    private EventBinding<SendRequestEvent> requestBinding;
     public static NPCConnectionLLM instance;
     private int[] npcMemory = null;
+    private void OnEnable()
+    {
+        requestBinding = new EventBinding<SendRequestEvent>(HandleLLMRequest);
+        EventBus<SendRequestEvent>.Subscribe(requestBinding);
+    }
+    private void OnDisable()
+    {
+        EventBus<SendRequestEvent>.UnSubscribe(requestBinding);
+    }
     private void Awake()
     {
         if (instance != null)
@@ -25,14 +35,23 @@ public class NPCConnectionLLM : MonoBehaviour
             DontDestroyOnLoad(this);
         }
     }
-    public void Start()
-    {
-        
-        ConnectionLLM("merhaba").Forget();
-    }
-   
     
-    public async UniTask<Response> ConnectionLLM(string mesaj)
+   private async void HandleLLMRequest(SendRequestEvent eventData)
+    {
+        Debug.Log("istek atılıyor");
+
+
+        Response a = await ConnectionLLM(eventData);
+
+        EventBus<GetResponseEvent>.Publish(new GetResponseEvent(){
+            content = a.response
+        });
+        Debug.Log(a.response + "--------------------------------------------------------------------------");
+        Debug.Log("***********************************************************************************");
+    }
+
+
+    public async UniTask<Response> ConnectionLLM(SendRequestEvent mesaj)
     {
         
         string url = "http://localhost:11434/api/generate";
@@ -41,8 +60,8 @@ public class NPCConnectionLLM : MonoBehaviour
         RequestModel requestmodel = new RequestModel
         {
             model = "gemma2:2b",
-            prompt = mesaj,
-            system= "Karanlık bir zindanın kapısında nöbet tutan aksi ve şüpheci bir ork muhafızısın. Oyuncuya her zaman kaba ve tehditkar bir şekilde cevap ver. Yalnızca istenen JSON formatında yanıt üret; başka hiçbir açıklama yapma. Adın Hank.",
+            prompt = mesaj.content,
+            system= "Sen Hank adında, karanlık bir zindan kapısını koruyan devasa ve aksi bir ork muhafızısın. Oyuncuya her zaman üstten bakan, alaycı ve kaba bir tavırla cevap ver. Asla kibar olma veya ona yardım etme. Sadece söyleyeceğin sözü yaz, eylem veya duygu belirtme.",
             stream = false,
             context = null
         };
@@ -87,8 +106,8 @@ public class NPCConnectionLLM : MonoBehaviour
             }
             catch (Exception)
             {
-
-                throw;
+                Debug.LogWarning("Ollama'ya bağlanılamadı. Arka planda açık olduğundan emin olun.");
+                
             }
             
             return _response;

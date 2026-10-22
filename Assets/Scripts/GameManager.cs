@@ -19,17 +19,7 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
     }
-    void Start()
-    {
-        var A =  NPCConnectionLLM.instance.ConnectionLLM("merhaba");
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void buttonPres()
     {
         ButtonPresed?.Invoke(this,EventArgs.Empty);

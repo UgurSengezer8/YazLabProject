@@ -11,3 +11,11 @@ public struct SoundEvent : IEvent
 {
 
 }
+public struct SendRequestEvent : IEvent
+{
+    public string content;
+}
+public struct GetResponseEvent : IEvent
+{
+    public string content;
+}
