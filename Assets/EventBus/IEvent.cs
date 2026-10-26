@@ -11,3 +11,8 @@ public struct SoundEvent : IEvent
 {
 
 }
+public struct PlayerMoveEvent : IEvent
+{
+    public Vector2 direction;
+    public bool isWalking;
+}

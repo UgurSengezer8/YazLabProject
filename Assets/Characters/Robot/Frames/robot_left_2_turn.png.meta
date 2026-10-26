@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 348240bc9a5127e408d830359c7f3d7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6359637192920154948
+    second: robot_left_2_turn_0
+  - first:
+      213: 3352688692693085317
+    second: robot_left_2_turn_1
+  - first:
+      213: 7490318886318026384
+    second: robot_left_2_turn_2
+  - first:
+      213: -8772457815220723182
+    second: robot_left_2_turn_3
+  - first:
+      213: 4818786484842543337
+    second: robot_left_2_turn_4
+  - first:
+      213: -8869299475198547979
+    second: robot_left_2_turn_5
+  - first:
+      213: 6161369106551401678
+    second: robot_left_2_turn_6
+  - first:
+      213: -3306694486836038827
+    second: robot_left_2_turn_7
+  - first:
+      213: 5155855567772631742
+    second: robot_left_2_turn_8
+  - first:
+      213: -147587737073485321
+    second: robot_left_2_turn_9
+  - first:
+      213: 7930347395888456083
+    second: robot_left_2_turn_10
+  - first:
+      213: 6518867949070880886
+    second: robot_left_2_turn_11
+  - first:
+      213: -4591873079586374645
+    second: robot_left_2_turn_12
+  - first:
+      213: 7371707090241228974
+    second: robot_left_2_turn_13
+  - first:
+      213: -2915767145083441335
+    second: robot_left_2_turn_14
+  - first:
+      213: 1972210203650334487
+    second: robot_left_2_turn_15
+  - first:
+      213: 7682574661633895749
+    second: robot_left_2_turn_16
+  - first:
+      213: 6385943408089055326
+    second: robot_left_2_turn_17
+  - first:
+      213: -5925213242967355213
+    second: robot_left_2_turn_18
+  - first:
+      213: 6817760978626712949
+    second: robot_left_2_turn_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robot_left_2_turn_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 267
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4434e580558f14850800000000000000
+      internalID: 6359637192920154948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 263
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ca07a4a94278e20800000000000000
+      internalID: 3352688692693085317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 255
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ea2697755f2f760800000000000000
+      internalID: 7490318886318026384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 251
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2126ba47818f14680800000000000000
+      internalID: -8772457815220723182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 38
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e83e75e6c4cfd240800000000000000
+      internalID: 4818786484842543337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 246
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f76b3e6e1be9e480800000000000000
+      internalID: -8869299475198547979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 247
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccef0ede84918550800000000000000
+      internalID: 6161369106551401678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 219
+        width: 13
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553356342e24c12d0800000000000000
+      internalID: -3306694486836038827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2ce4e62574d8740800000000000000
+      internalID: 5155855567772631742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 161
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9f78e2cb9a3fdf0800000000000000
+      internalID: -147587737073485321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 165
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391206590f04e0e60800000000000000
+      internalID: 7930347395888456083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 167
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6709c0a7cdba77a50800000000000000
+      internalID: 6518867949070880886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 109
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c339d43c36640c0800000000000000
+      internalID: -4591873079586374645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 89
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea09e06aa809d4660800000000000000
+      internalID: 7371707090241228974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 86
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94feb8dda3d1987d0800000000000000
+      internalID: -2915767145083441335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 71
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f9af22bb2be5b10800000000000000
+      internalID: 1972210203650334487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dea1363fcfd9a60800000000000000
+      internalID: 7682574661633895749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5045ea02bd6f9850800000000000000
+      internalID: 6385943408089055326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b09d7ad2f965cda0800000000000000
+      internalID: -5925213242967355213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_left_2_turn_19
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 13
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575909eec7d8d9e50800000000000000
+      internalID: 6817760978626712949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      robot_left_2_turn_0: 6359637192920154948
+      robot_left_2_turn_1: 3352688692693085317
+      robot_left_2_turn_10: 7930347395888456083
+      robot_left_2_turn_11: 6518867949070880886
+      robot_left_2_turn_12: -4591873079586374645
+      robot_left_2_turn_13: 7371707090241228974
+      robot_left_2_turn_14: -2915767145083441335
+      robot_left_2_turn_15: 1972210203650334487
+      robot_left_2_turn_16: 7682574661633895749
+      robot_left_2_turn_17: 6385943408089055326
+      robot_left_2_turn_18: -5925213242967355213
+      robot_left_2_turn_19: 6817760978626712949
+      robot_left_2_turn_2: 7490318886318026384
+      robot_left_2_turn_3: -8772457815220723182
+      robot_left_2_turn_4: 4818786484842543337
+      robot_left_2_turn_5: -8869299475198547979
+      robot_left_2_turn_6: 6161369106551401678
+      robot_left_2_turn_7: -3306694486836038827
+      robot_left_2_turn_8: 5155855567772631742
+      robot_left_2_turn_9: -147587737073485321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
