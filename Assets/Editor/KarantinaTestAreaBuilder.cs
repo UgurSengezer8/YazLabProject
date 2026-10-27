@@ -21,7 +21,6 @@ public static class KarantinaTestAreaBuilder
         if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) Build();
     }
 
-    // Also callable with Unity -batchmode -executeMethod KarantinaTestAreaBuilder.Build.
     public static void Build()
     {
         Directory.CreateDirectory(Output + "/Animations");

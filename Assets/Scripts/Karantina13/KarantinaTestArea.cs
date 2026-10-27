@@ -18,7 +18,6 @@ namespace Karantina13
                 player.ResetToSpawn();
                 robot.ResetToSpawn();
             }
-            // Keep the whole test room visible, including in a narrow Game view.
             if (arenaCamera != null)
             {
                 float scale = Mathf.Clamp(Screen.width / 1100f, 0.55f, 1.5f);

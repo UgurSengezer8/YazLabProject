@@ -33,7 +33,6 @@ namespace Karantina13
             MoveInput = ReadMovement(Keyboard.current, controls);
             if (IsMoving)
             {
-                // Four facing directions; vertical input wins on an exact diagonal.
                 if (Mathf.Abs(MoveInput.x) > Mathf.Abs(MoveInput.y))
                     Facing = MoveInput.x > 0 ? "Right" : "Left";
                 else

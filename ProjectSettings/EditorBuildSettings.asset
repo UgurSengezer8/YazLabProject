@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Level01.unity
+    guid: bc2bac86891d4d5499c0cd42b5edb6a0
+  - enabled: 1
     path: Assets/Scenes/Karantina13_TestArea.unity
     guid: 7d9fb8666ccfc794495c7f0944feab04
   - enabled: 1
