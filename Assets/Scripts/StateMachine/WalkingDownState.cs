@@ -15,22 +15,48 @@ public class WalkingDownState : IState
 
     public void UpdateState(PlayerMovement player)
     {
-        switch (PlayerMovement.Instance.currentLookDirection)
+        if (player.isWalking)
         {
-            case PlayerMovement.LookDirection.None:
-                PlayerMovement.Instance.ChangeState(new IdleState());
-                break;
-            case PlayerMovement.LookDirection.Up:
-                PlayerMovement.Instance.ChangeState(new WalkingUpState());
-                break;
-            case PlayerMovement.LookDirection.Left:
-                PlayerMovement.Instance.ChangeState(new WalkingLeftState());
-                break;
-            case PlayerMovement.LookDirection.Right:
-                PlayerMovement.Instance.ChangeState(new WalkingRigtState());
-                break;
-            default:
-                break;
+            if (player.isTouchingBox)
+            {
+                switch (PlayerMovement.Instance.currentLookDirection)
+                {
+                    case PlayerMovement.LookDirection.Up:
+                        PlayerMovement.Instance.ChangeState(new PushingBoxUpState());
+                        break;
+                    case PlayerMovement.LookDirection.Left:
+                        PlayerMovement.Instance.ChangeState(new PushingBoxLeftState());
+                        break;
+                    case PlayerMovement.LookDirection.Right:
+                        PlayerMovement.Instance.ChangeState(new PushingBoxRightState());
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                switch (PlayerMovement.Instance.currentLookDirection)
+                {
+                    case PlayerMovement.LookDirection.Up:
+                        PlayerMovement.Instance.ChangeState(new WalkingUpState());
+                        break;
+                    case PlayerMovement.LookDirection.Left:
+                        PlayerMovement.Instance.ChangeState(new WalkingLeftState());
+                        break;
+                    case PlayerMovement.LookDirection.Right:
+                        PlayerMovement.Instance.ChangeState(new WalkingRigtState());
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
+        else
+        {
+
+            PlayerMovement.Instance.ChangeState(new IdleState());
+        }
+
     }
 }
