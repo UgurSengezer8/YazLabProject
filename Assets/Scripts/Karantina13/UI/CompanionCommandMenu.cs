@@ -112,13 +112,13 @@ namespace Karantina13.UI
         private void SendPushCommand(ICompanionCommandReceiver receiver)
         {
             Vector2 from = receiver.Transform != null ? (Vector2)receiver.Transform.position : Vector2.zero;
-            if (!resolver.TryFindNearestBox(from, out IPushable box) || !resolver.TryFindGoalPlate(box.Position, out PressurePlate plate))
+            if (!resolver.TryFindNearestBox(from, out IPushable box) || !resolver.TryFindGoal(box.Position, out IPushTarget goal))
             {
                 ShowHint("Yakında itilecek kutu yok", 2.5f);
                 return;
             }
 
-            receiver.Execute(CompanionCommand.PushBox(box, plate));
+            receiver.Execute(CompanionCommand.PushBox(box, goal));
             ShowHint("Robot: Kutuyu itiyorum.", 2f);
         }
 

@@ -50,6 +50,29 @@ namespace Karantina13.Companion
             return plate != null;
         }
 
+        public bool TryFindGoal(Vector2 boxPosition, out IPushTarget goal)
+        {
+            goal = null;
+            float bestDistance = float.MaxValue;
+            ConsiderGoals(Object.FindObjectsByType<PressurePlate>(FindObjectsSortMode.None), boxPosition, ref goal, ref bestDistance);
+            ConsiderGoals(Object.FindObjectsByType<LaserBeam>(FindObjectsSortMode.None), boxPosition, ref goal, ref bestDistance);
+            return goal != null;
+        }
+
+        private static void ConsiderGoals<T>(T[] candidates, Vector2 boxPosition, ref IPushTarget goal, ref float bestDistance) where T : MonoBehaviour, IPushTarget
+        {
+            foreach (T candidate in candidates)
+            {
+                if (candidate == null || !candidate.isActiveAndEnabled || candidate.IsSatisfied) continue;
+
+                float distance = (candidate.Position - boxPosition).sqrMagnitude;
+                if (distance >= bestDistance) continue;
+
+                goal = candidate;
+                bestDistance = distance;
+            }
+        }
+
         private static bool IsOnPressedPlate(Vector2 position, PressurePlate[] plates)
         {
             foreach (PressurePlate plate in plates)

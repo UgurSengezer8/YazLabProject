@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Karantina13.Puzzle
 {
-    public sealed class PressurePlate : MonoBehaviour
+    public sealed class PressurePlate : MonoBehaviour, IPushTarget
     {
         [SerializeField] private Vector2 size = new Vector2(1.4f, 1.4f);
         [SerializeField] private float centerTolerance = 0.6f;
@@ -20,6 +20,7 @@ namespace Karantina13.Puzzle
         public bool IsPressed => isPressed;
         public bool IsOccupied => isPressed;
         public Vector2 Position => transform.position;
+        public bool IsSatisfied => isPressed;
 
         public event System.Action<bool> PressedChanged;
 

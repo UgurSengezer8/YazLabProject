@@ -5,20 +5,21 @@ namespace Karantina13.Companion
 {
     public readonly struct CompanionCommand
     {
-        private CompanionCommand(CompanionCommandType type, Transform followTarget, Vector2 destination, IPushable box, PressurePlate goalPlate)
+        private CompanionCommand(CompanionCommandType type, Transform followTarget, Vector2 destination, IPushable box, IPushTarget goal)
         {
             Type = type;
             FollowTarget = followTarget;
             Destination = destination;
             Box = box;
-            GoalPlate = goalPlate;
+            Goal = goal;
         }
 
         public CompanionCommandType Type { get; }
         public Transform FollowTarget { get; }
         public Vector2 Destination { get; }
         public IPushable Box { get; }
-        public PressurePlate GoalPlate { get; }
+        public IPushTarget Goal { get; }
+        public PressurePlate GoalPlate => Goal as PressurePlate;
 
         public static CompanionCommand Follow(Transform target)
         {
@@ -35,7 +36,7 @@ namespace Karantina13.Companion
             return new CompanionCommand(CompanionCommandType.MoveTo, null, destination, null, null);
         }
 
-        public static CompanionCommand PushBox(IPushable box, PressurePlate goal)
+        public static CompanionCommand PushBox(IPushable box, IPushTarget goal)
         {
             Vector2 destination = goal != null ? goal.Position : Vector2.zero;
             return new CompanionCommand(CompanionCommandType.PushNearestBox, null, destination, box, goal);
