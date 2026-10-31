@@ -21,6 +21,9 @@ public class WalkingDownState : IState
             {
                 switch (PlayerMovement.Instance.currentLookDirection)
                 {
+                    case PlayerMovement.LookDirection.Down:
+                        PlayerMovement.Instance.ChangeState(new PushingBoxDownState());
+                        break;
                     case PlayerMovement.LookDirection.Up:
                         PlayerMovement.Instance.ChangeState(new PushingBoxUpState());
                         break;

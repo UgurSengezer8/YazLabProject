@@ -5,7 +5,7 @@ public class PushingBoxDownState : IState
     public void EnterState(PlayerMovement player)
     {
         Debug.Log("Entering Pushing Box Down State");
-        PlayerAnimationControl.Instance.ChangeAnimation("WalkingDown");
+        PlayerAnimationControl.Instance.ChangeAnimation("PlayerPushDown");
     }
 
     public void ExitState(PlayerMovement player)

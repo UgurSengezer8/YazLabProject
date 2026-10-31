@@ -5,7 +5,7 @@ public class PushingBoxRightState : IState
     public void EnterState(PlayerMovement player)
     {
         Debug.Log("Entering Pushing Box Right State");
-        PlayerAnimationControl.Instance.ChangeAnimation("WalkingDown");
+        PlayerAnimationControl.Instance.ChangeAnimation("PlayerPushRight");
     }
 
     public void ExitState(PlayerMovement player)
