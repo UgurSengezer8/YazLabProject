@@ -82,6 +82,8 @@ public static class LevelBuildKit
     public static string BarrierFrame(int index) => "Animations/ElectricBarrier/electric_barrier_0" + index + ".png";
     public static string DoorFrame(int index) => "Animations/SlidingDoor/sliding_door_0" + index + ".png";
     public static string LaserFrame(int index) => "Animations/LaserBeam/laser_beam_0" + index + ".png";
+    public static string RayFrame(int index) => "Animations/LaserRay/laser_ray_0" + index + ".png";
+    public const string RayImpact = "Animations/LaserRay/laser_impact.png";
 
     public static IEnumerable<string> FramePaths(Func<int, string> framePath)
     {
@@ -400,6 +402,74 @@ public static class LevelBuildKit
         beam.Configure(blocker, segments.ToArray(), CellSize, length, Vector2.right);
         SetLayerRecursively(root, LayerIndex(GameLayers.Laser));
         return beam;
+    }
+
+    public static LaserBeam CreateLaserRay(string name, Vector2 origin, Vector2 direction, float length, float goalDistance)
+    {
+        var root = new GameObject(name);
+        root.transform.SetParent(puzzleRoot, false);
+        root.transform.localPosition = origin;
+        Vector2 axis = direction.normalized;
+        const float width = 0.7f;
+
+        var blockerObject = new GameObject("Blocker");
+        blockerObject.transform.SetParent(root.transform, false);
+        var blocker = blockerObject.AddComponent<BoxCollider2D>();
+        blocker.size = new Vector2(width, length);
+        blocker.offset = axis * (length * 0.5f);
+
+        Sprite[] frames = LoadFrames(RayFrame);
+        var rayObject = new GameObject("Ray");
+        rayObject.transform.SetParent(root.transform, false);
+        rayObject.transform.localRotation = Quaternion.FromToRotation(Vector3.up, axis);
+        float scale = CellSize / frames[0].bounds.size.y;
+        rayObject.transform.localScale = new Vector3(scale, scale, 1f);
+        var ray = rayObject.AddComponent<SpriteRenderer>();
+        ray.sprite = frames[0];
+        ray.sharedMaterial = spriteMaterial;
+        ray.sortingOrder = -950;
+        ray.drawMode = SpriteDrawMode.Tiled;
+        ray.tileMode = SpriteTileMode.Continuous;
+        ray.size = new Vector2(frames[0].bounds.size.x, length / scale);
+        rayObject.AddComponent<SpriteFrameAnimator>().Configure(frames, 12f, true);
+
+        var impact = new GameObject("Impact");
+        impact.transform.SetParent(root.transform, false);
+        impact.transform.localPosition = axis * length;
+        GameObject glow = CenteredSprite("Glow", RayImpact, Vector2.zero, new Vector2(0.9f, 0.54f), 400, impact.transform);
+        glow.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.9f);
+        impact.SetActive(false);
+
+        var beam = root.AddComponent<LaserBeam>();
+        beam.ConfigureRay(axis, blocker, ray, impact.transform, width, length, goalDistance, Vector2.right);
+        SetLayerRecursively(root, LayerIndex(GameLayers.Laser));
+        return beam;
+    }
+
+    public static void CreateGlassWall(int fromX, int toX, int row, ICollection<int> slotColumns)
+    {
+        var root = new GameObject("Glass Wall");
+        root.transform.SetParent(geometryRoot, false);
+        for (int x = fromX; x <= toX; x++)
+        {
+            var cell = new Vector2Int(x, row);
+            string tile = slotColumns != null && slotColumns.Contains(x) ? "glass_wall_slot" : "glass_wall";
+            GameObject pane = BottomSprite("Glass " + x, TilePath(tile), CellBottom(cell), WallSize, 0, root.transform);
+            AddYSort(pane, true);
+        }
+        var collider = root.AddComponent<BoxCollider2D>();
+        float width = (toX - fromX + 1) * CellSize;
+        collider.size = new Vector2(width, CellSize);
+        collider.offset = new Vector2(fromX * CellSize - CellSize * 0.5f + width * 0.5f, row * CellSize);
+        SetLayerRecursively(root, LayerIndex(GameLayers.Environment));
+    }
+
+    public static GameObject PlaceDecal(string name, string sprite, Vector2 feet, float width)
+    {
+        GameObject decal = BottomSprite(name, PropPath(sprite), feet, SizeFor(PropPath(sprite), width), 0, decorRoot);
+        decal.layer = LayerIndex(GameLayers.Environment);
+        AddYSort(decal, true);
+        return decal;
     }
 
     public static GameObject CreatePushableBox(string name, Vector2Int cell)

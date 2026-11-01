@@ -9,6 +9,13 @@ public static class Level01Builder
 {
     public const string ScenePath = "Assets/Scenes/Level01.unity";
 
+    private const int RoomHeight = 5;
+    private const int DoorRow = 2;
+    private const int MiddleWall = 5;
+    private const int EastWall = 13;
+    private const int FenceColumn = 9;
+    private const int CorridorEnd = 16;
+
     [MenuItem("Karantina 13/Bolum 1 Olustur")]
     public static void BuildFromMenu()
     {
@@ -24,9 +31,11 @@ public static class Level01Builder
         BuildDecor();
         BuildTriggers();
 
-        GameObject player = LevelBuildKit.SpawnPlayer(new Vector2Int(2, 3));
-        LevelBuildKit.SpawnRobot(new Vector2Int(3, 2));
-        LevelBuildKit.CreateCamera(player.transform, Rect.MinMaxRect(-3f, -3f, 53f, 19.2f));
+        GameObject player = LevelBuildKit.SpawnPlayer(new Vector2Int(1, DoorRow));
+        LevelBuildKit.SpawnRobot(new Vector2Int(1, 1));
+        float right = (CorridorEnd + 1) * LevelBuildKit.CellSize;
+        float top = RoomHeight * LevelBuildKit.CellSize + 2.2f;
+        LevelBuildKit.CreateCamera(player.transform, Rect.MinMaxRect(-3f, -3f, right, top));
         LevelBuildKit.CreateSystems(player.transform);
 
         LevelBuildKit.FinishScene(scene, ScenePath, 0);
@@ -49,21 +58,22 @@ public static class Level01Builder
 
     private static void BuildFloors()
     {
-        LevelBuildKit.FillRoomFloor(0, 7, 0, 6);
-        LevelBuildKit.FillRoomFloor(12, 21, 0, 8);
-        for (int x = 8; x <= 11; x++) LevelBuildKit.PlaceFloor(new Vector2Int(x, 4), "floor_worn_metal");
-        for (int x = 22; x <= 25; x++) LevelBuildKit.PlaceFloor(new Vector2Int(x, 3), "floor_worn_metal");
+        LevelBuildKit.FillRoomFloor(0, MiddleWall - 1, 0, RoomHeight - 1);
+        LevelBuildKit.FillRoomFloor(MiddleWall + 1, EastWall - 1, 0, RoomHeight - 1);
+        LevelBuildKit.PlaceFloor(new Vector2Int(MiddleWall, DoorRow), "floor_worn_metal");
+        for (int x = EastWall; x < CorridorEnd; x++) LevelBuildKit.PlaceFloor(new Vector2Int(x, DoorRow), "floor_worn_metal");
     }
 
     private static void BuildWalls()
     {
+        int north = RoomHeight;
         var runs = new List<RectInt>
         {
-            Run(-1, -1, 8, -1), Run(-1, 7, 8, 7), Run(-1, 0, -1, 6), Run(8, 0, 8, 3), Run(8, 5, 8, 6),
-            Run(9, 3, 10, 3), Run(9, 5, 10, 5),
-            Run(11, -1, 22, -1), Run(11, 9, 22, 9), Run(11, 0, 11, 3), Run(11, 5, 11, 8),
-            Run(22, 0, 22, 2), Run(22, 4, 22, 8),
-            Run(23, 2, 26, 2), Run(23, 4, 26, 4), Run(26, 3, 26, 3)
+            Run(-1, -1, EastWall, -1), Run(-1, north, EastWall, north), Run(-1, 0, -1, north - 1),
+            Run(MiddleWall, 0, MiddleWall, DoorRow - 1), Run(MiddleWall, DoorRow + 1, MiddleWall, north - 1),
+            Run(EastWall, 0, EastWall, DoorRow - 1), Run(EastWall, DoorRow + 1, EastWall, north - 1),
+            Run(EastWall + 1, DoorRow - 1, CorridorEnd, DoorRow - 1), Run(EastWall + 1, DoorRow + 1, CorridorEnd, DoorRow + 1),
+            Run(CorridorEnd, DoorRow, CorridorEnd, DoorRow)
         };
         LevelBuildKit.BuildWalls(runs);
     }
@@ -72,43 +82,37 @@ public static class Level01Builder
 
     private static void BuildPuzzles()
     {
-        SlidingDoor doorA = LevelBuildKit.CreateSlidingDoor("Door A", new Vector2Int(8, 4));
-        SlidingDoor doorB = LevelBuildKit.CreateSlidingDoor("Door B", new Vector2Int(22, 3));
-        ElectricFence fence = LevelBuildKit.CreateElectricFence(17, 0, 8);
+        SlidingDoor doorA = LevelBuildKit.CreateSlidingDoor("Door A", new Vector2Int(MiddleWall, DoorRow));
+        SlidingDoor doorB = LevelBuildKit.CreateSlidingDoor("Door B", new Vector2Int(EastWall, DoorRow));
+        ElectricFence fence = LevelBuildKit.CreateElectricFence(FenceColumn, 0, RoomHeight - 1);
 
-        LevelBuildKit.CreatePushableBox("Crate A", new Vector2Int(4, 4));
-        LevelBuildKit.CreatePushableBox("Crate B", new Vector2Int(19, 6));
+        LevelBuildKit.CreatePushableBox("Crate A", new Vector2Int(2, 3));
+        LevelBuildKit.CreatePushableBox("Crate B", new Vector2Int(11, 3));
 
-        LevelBuildKit.CreatePressurePlate("Plate A", new Vector2Int(6, 4), new MonoBehaviour[] { doorA });
-        LevelBuildKit.CreatePressurePlate("Plate B", new Vector2Int(19, 3), new MonoBehaviour[] { fence, doorB });
+        LevelBuildKit.CreatePressurePlate("Plate A", new Vector2Int(4, 3), new MonoBehaviour[] { doorA });
+        LevelBuildKit.CreatePressurePlate("Plate B", new Vector2Int(11, 1), new MonoBehaviour[] { fence, doorB });
     }
 
     private static void BuildDecor()
     {
-        LevelBuildKit.PlaceProp("Lab Table", "lab_table", new Vector2(2.6f, 11.1f), 2.5f);
-        LevelBuildKit.PlaceProp("Computer Terminal", "computer_terminal", new Vector2(9.6f, 11.2f), 1.5f);
-        LevelBuildKit.PlaceProp("Barrel A1", "barrel", new Vector2(0.3f, -0.8f), 0.8f);
-        LevelBuildKit.PlaceProp("Barrel A2", "barrel", new Vector2(1.4f, -0.8f), 0.8f);
-        LevelBuildKit.PlaceProp("Warning Plate A", "warning_sign", new Vector2(13.6f, 10.4f), 0.7f);
-        LevelBuildKit.PlaceWallDecor("Control Panel", "wall_control_panel", new Vector2(6f, 13.5f), 0.7f, 13f);
+        float wallBaseY = RoomHeight * LevelBuildKit.CellSize - LevelBuildKit.CellSize * 0.5f;
+        LevelBuildKit.PlaceProp("Lab Table", "lab_table", new Vector2(1.2f, 7.1f), 2.5f);
+        LevelBuildKit.PlaceProp("Barrel A1", "barrel", new Vector2(6.6f, -0.8f), 0.8f);
+        LevelBuildKit.PlaceProp("Barrel A2", "barrel", new Vector2(7.6f, -0.6f), 0.8f);
+        LevelBuildKit.PlaceWallDecor("Control Panel A", "wall_control_panel", new Vector2(6f, wallBaseY + 0.3f), 0.7f, wallBaseY);
 
-        LevelBuildKit.PlaceProp("Warning Fence North", "warning_sign", new Vector2(31.6f, 12.4f), 0.7f);
-        LevelBuildKit.PlaceProp("Warning Fence South", "warning_sign", new Vector2(36.4f, 0.2f), 0.7f);
-        LevelBuildKit.PlaceProp("Barrel B1", "barrel", new Vector2(24.4f, 15.2f), 0.8f);
-        LevelBuildKit.PlaceProp("Barrel B2", "barrel", new Vector2(25.6f, 15.2f), 0.8f);
-        LevelBuildKit.PlaceProp("Barrel B3", "barrel", new Vector2(42.4f, -0.8f), 0.8f);
-        LevelBuildKit.PlaceProp("Crate Stack 1", "crate", new Vector2(24.6f, -0.8f), 1.5f);
-        LevelBuildKit.PlaceProp("Crate Stack 2", "crate", new Vector2(26.4f, -0.8f), 1.5f);
-        LevelBuildKit.PlaceProp("Crate Stack 3", "crate", new Vector2(42.2f, 15.2f), 1.5f);
-        LevelBuildKit.PlaceProp("Computer Terminal B", "computer_terminal", new Vector2(28f, 15.2f), 1.5f);
+        LevelBuildKit.PlaceProp("Computer Terminal", "computer_terminal", new Vector2(12.9f, 7.1f), 1.5f);
+        LevelBuildKit.PlaceProp("Warning Fence", "warning_sign", new Vector2(16.4f, -0.6f), 0.7f);
+        LevelBuildKit.PlaceWallDecor("Control Panel B", "wall_control_panel", new Vector2(22f, wallBaseY + 0.3f), 0.7f, wallBaseY);
+        LevelBuildKit.PlaceProp("Barrel B1", "barrel", new Vector2(24.3f, -0.8f), 0.8f);
     }
 
     private static void BuildTriggers()
     {
-        LevelBuildKit.CreateHintZone("Hint Start", LevelBuildKit.CellCenter(new Vector2Int(2, 3)), new Vector2(6f, 6f),
+        LevelBuildKit.CreateHintZone("Hint Start", LevelBuildKit.CellCenter(new Vector2Int(1, DoorRow)), new Vector2(4f, 4f),
             "Kapıyı aç: Robota kutuyu butona ittir (Q)", "Q tuşuyla robota komut verebilirsin.");
-        LevelBuildKit.CreateHintZone("Hint Electric Room", LevelBuildKit.CellCenter(new Vector2Int(12, 4)), new Vector2(2f, 6f),
+        LevelBuildKit.CreateHintZone("Hint Electric Room", LevelBuildKit.CellCenter(new Vector2Int(MiddleWall + 1, DoorRow)), new Vector2(2f, 6f),
             "Elektriği kes: Robot tellerden geçebilir", "Tellere dokunamam ama robot yalıtımlı, o geçebilir.");
-        LevelBuildKit.CreateLevelExit(new Vector2Int(25, 3), "Level02", "Bölüm 1 tamamlandı!");
+        LevelBuildKit.CreateLevelExit(new Vector2Int(CorridorEnd - 1, DoorRow), "Level02", "Bölüm 1 tamamlandı!");
     }
 }
