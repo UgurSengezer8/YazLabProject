@@ -66,7 +66,10 @@ public static class Level02Builder
     private static void BuildFloors()
     {
         LevelBuildKit.FillRoomFloor(0, RoomWidth - 1, 0, RoomHeight - 1);
-        LevelBuildKit.PlaceFloor(new Vector2Int(-1, DoorRow), "floor_worn_metal");
+        foreach (Vector2Int cell in LevelBuildKit.DoorCells(new Vector2Int(-1, DoorRow), true))
+        {
+            LevelBuildKit.PlaceFloor(cell, "floor_worn_metal");
+        }
         for (int x = RoomWidth; x < RoomWidth + CorridorLength; x++)
         {
             LevelBuildKit.PlaceFloor(new Vector2Int(x, DoorRow), "floor_worn_metal");
@@ -82,8 +85,7 @@ public static class Level02Builder
         {
             LevelBuildKit.Run(-1, -1, east, -1),
             LevelBuildKit.Run(-1, north, east, north),
-            LevelBuildKit.Run(-1, 0, -1, DoorRow - 1),
-            LevelBuildKit.Run(-1, DoorRow + 1, -1, north - 1),
+            LevelBuildKit.Run(-1, 0, -1, DoorRow - 2),
             LevelBuildKit.Run(east, 0, east, DoorRow - 1),
             LevelBuildKit.Run(east, DoorRow + 1, east, north - 1),
             LevelBuildKit.Run(east + 1, DoorRow - 1, corridorEnd, DoorRow - 1),
@@ -96,7 +98,7 @@ public static class Level02Builder
 
     private static void BuildPuzzles()
     {
-        LevelBuildKit.CreateSlidingDoor("Entrance Door", new Vector2Int(-1, DoorRow));
+        LevelBuildKit.CreateSlidingDoor("Entrance Door", new Vector2Int(-1, DoorRow), true);
 
         float wallFace = RoomHeight * LevelBuildKit.CellSize - LevelBuildKit.CellSize * 0.5f;
         float length = wallFace - RayOrigin;

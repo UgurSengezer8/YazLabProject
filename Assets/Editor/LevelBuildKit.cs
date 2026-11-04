@@ -27,8 +27,10 @@ public static class LevelBuildKit
     public static readonly Vector2 TileSize = new Vector2(2.02f, 2.02f);
     public static readonly Vector2 WallSize = new Vector2(2.02f, 2.1f);
     public static readonly Vector2 FrameSize = new Vector2(2.4f, 2.4f);
-    public static readonly Vector2 VerticalDoorSize = new Vector2(1.25f, 2.5f);
-    public const float VerticalDoorPadding = 0.1f;
+    public const int DoorSpan = 3;
+    public static readonly Vector2 WideDoorSize = new Vector2(6.4f, 2.4f);
+    public static readonly Vector2 TallDoorSize = new Vector2(1.25f, 6.5f);
+    public const float TallDoorPadding = 0.1f;
 
     private static readonly string[] RequiredLayers =
     {
@@ -83,7 +85,8 @@ public static class LevelBuildKit
     public static string PropPath(string name) => "Props/" + name + ".png";
     public static string BarrierFrame(int index) => "Animations/ElectricBarrier/electric_barrier_0" + index + ".png";
     public static string DoorFrame(int index) => "Animations/SlidingDoor/sliding_door_0" + index + ".png";
-    public static string VerticalDoorFrame(int index) => "Animations/SlidingDoor/sliding_door_vertical_0" + index + ".png";
+    public static string WideDoorFrame(int index) => "Animations/SlidingDoor/sliding_door_wide_0" + index + ".png";
+    public static string TallDoorFrame(int index) => "Animations/SlidingDoor/sliding_door_tall_0" + index + ".png";
     public static string LaserFrame(int index) => "Animations/LaserBeam/laser_beam_0" + index + ".png";
     public static string RayFrame(int index) => "Animations/LaserRay/laser_ray_0" + index + ".png";
     public const string RayImpact = "Animations/LaserRay/laser_impact.png";
@@ -318,27 +321,31 @@ public static class LevelBuildKit
         go.AddComponent<BoxCollider2D>().size = size;
     }
 
-    public static SlidingDoor CreateSlidingDoor(string name, Vector2Int cell)
+    // Kapilar DoorSpan (3) kare genisligindedir. center ortadaki karedir.
+    // vertical: dikey duvardaki kapi (yukari-asagi uzanir), degilse yatay duvardaki kapi (saga-sola uzanir).
+    public static IEnumerable<Vector2Int> DoorCells(Vector2Int center, bool vertical)
+    {
+        Vector2Int step = vertical ? Vector2Int.up : Vector2Int.right;
+        int half = DoorSpan / 2;
+        for (int i = -half; i <= half; i++) yield return center + step * i;
+    }
+
+    public static SlidingDoor CreateSlidingDoor(string name, Vector2Int center, bool vertical)
     {
         var root = new GameObject(name);
         root.transform.SetParent(puzzleRoot, false);
-        root.transform.localPosition = CellCenter(cell);
+        root.transform.localPosition = CellCenter(center);
 
+        float span = DoorSpan * CellSize;
         var blocker = root.AddComponent<BoxCollider2D>();
-        blocker.size = new Vector2(CellSize, CellSize);
+        blocker.size = vertical ? new Vector2(CellSize, span) : new Vector2(span, CellSize);
 
-        // Dikey duvardaki kapi (ust/alt komsusu duvar) yandan gorunen dar kapiyi kullanir.
-        bool vertical = IsInVerticalWall(cell);
-        Func<int, string> frames = vertical ? (Func<int, string>)VerticalDoorFrame : DoorFrame;
-        if (vertical)
-        {
-            foreach (string path in FramePaths(VerticalDoorFrame)) EnsureSpriteImport(ArtRoot + path);
-        }
-        Vector2 size = vertical ? VerticalDoorSize : FrameSize;
-        float padding = vertical ? VerticalDoorPadding : FramePadding;
+        Func<int, string> frames = vertical ? (Func<int, string>)TallDoorFrame : WideDoorFrame;
+        foreach (string path in FramePaths(frames)) EnsureSpriteImport(ArtRoot + path);
+        Vector2 size = vertical ? TallDoorSize : WideDoorSize;
+        float bottom = vertical ? span * 0.5f + TallDoorPadding : CellSize * 0.5f + FramePadding;
 
-        Vector2 anchor = Vector2.down * (CellSize * 0.5f + padding);
-        GameObject visual = BottomSprite("Visual", frames(0), anchor, size, 0, root.transform);
+        GameObject visual = BottomSprite("Visual", frames(0), Vector2.down * bottom, size, 0, root.transform);
         AddYSort(visual, true);
         var animator = visual.AddComponent<SpriteFrameAnimator>();
         animator.Configure(LoadFrames(frames), 8f, false);
@@ -347,13 +354,6 @@ public static class LevelBuildKit
         door.Configure(blocker, animator);
         SetLayerRecursively(root, LayerIndex(GameLayers.Environment));
         return door;
-    }
-
-    private static bool IsInVerticalWall(Vector2Int cell)
-    {
-        bool wallAboveOrBelow = wallCells.Contains(cell + Vector2Int.up) || wallCells.Contains(cell + Vector2Int.down);
-        bool wallLeftOrRight = wallCells.Contains(cell + Vector2Int.left) || wallCells.Contains(cell + Vector2Int.right);
-        return wallAboveOrBelow && !wallLeftOrRight;
     }
 
     public static ElectricFence CreateElectricFence(int column, int fromRow, int toRow)
@@ -561,7 +561,12 @@ public static class LevelBuildKit
 
     public static LevelExit CreateLevelExit(Vector2Int cell, string nextSceneName, string completeMessage)
     {
-        GameObject exit = CreateTrigger("Level Exit", CellCenter(cell), new Vector2(CellSize, CellSize));
+        return CreateLevelExit(cell, nextSceneName, completeMessage, new Vector2(CellSize, CellSize));
+    }
+
+    public static LevelExit CreateLevelExit(Vector2Int cell, string nextSceneName, string completeMessage, Vector2 size)
+    {
+        GameObject exit = CreateTrigger("Level Exit", CellCenter(cell), size);
         var levelExit = exit.AddComponent<LevelExit>();
         levelExit.Configure(nextSceneName, completeMessage);
         return levelExit;
