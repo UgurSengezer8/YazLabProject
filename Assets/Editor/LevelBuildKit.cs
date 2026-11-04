@@ -27,6 +27,8 @@ public static class LevelBuildKit
     public static readonly Vector2 TileSize = new Vector2(2.02f, 2.02f);
     public static readonly Vector2 WallSize = new Vector2(2.02f, 2.1f);
     public static readonly Vector2 FrameSize = new Vector2(2.4f, 2.4f);
+    public static readonly Vector2 VerticalDoorSize = new Vector2(1.25f, 2.5f);
+    public const float VerticalDoorPadding = 0.1f;
 
     private static readonly string[] RequiredLayers =
     {
@@ -81,6 +83,7 @@ public static class LevelBuildKit
     public static string PropPath(string name) => "Props/" + name + ".png";
     public static string BarrierFrame(int index) => "Animations/ElectricBarrier/electric_barrier_0" + index + ".png";
     public static string DoorFrame(int index) => "Animations/SlidingDoor/sliding_door_0" + index + ".png";
+    public static string VerticalDoorFrame(int index) => "Animations/SlidingDoor/sliding_door_vertical_0" + index + ".png";
     public static string LaserFrame(int index) => "Animations/LaserBeam/laser_beam_0" + index + ".png";
     public static string RayFrame(int index) => "Animations/LaserRay/laser_ray_0" + index + ".png";
     public const string RayImpact = "Animations/LaserRay/laser_impact.png";
@@ -324,16 +327,33 @@ public static class LevelBuildKit
         var blocker = root.AddComponent<BoxCollider2D>();
         blocker.size = new Vector2(CellSize, CellSize);
 
-        Vector2 anchor = Vector2.down * (CellSize * 0.5f + FramePadding);
-        GameObject visual = BottomSprite("Visual", DoorFrame(0), anchor, FrameSize, 0, root.transform);
+        // Dikey duvardaki kapi (ust/alt komsusu duvar) yandan gorunen dar kapiyi kullanir.
+        bool vertical = IsInVerticalWall(cell);
+        Func<int, string> frames = vertical ? (Func<int, string>)VerticalDoorFrame : DoorFrame;
+        if (vertical)
+        {
+            foreach (string path in FramePaths(VerticalDoorFrame)) EnsureSpriteImport(ArtRoot + path);
+        }
+        Vector2 size = vertical ? VerticalDoorSize : FrameSize;
+        float padding = vertical ? VerticalDoorPadding : FramePadding;
+
+        Vector2 anchor = Vector2.down * (CellSize * 0.5f + padding);
+        GameObject visual = BottomSprite("Visual", frames(0), anchor, size, 0, root.transform);
         AddYSort(visual, true);
         var animator = visual.AddComponent<SpriteFrameAnimator>();
-        animator.Configure(LoadFrames(DoorFrame), 8f, false);
+        animator.Configure(LoadFrames(frames), 8f, false);
 
         var door = root.AddComponent<SlidingDoor>();
         door.Configure(blocker, animator);
         SetLayerRecursively(root, LayerIndex(GameLayers.Environment));
         return door;
+    }
+
+    private static bool IsInVerticalWall(Vector2Int cell)
+    {
+        bool wallAboveOrBelow = wallCells.Contains(cell + Vector2Int.up) || wallCells.Contains(cell + Vector2Int.down);
+        bool wallLeftOrRight = wallCells.Contains(cell + Vector2Int.left) || wallCells.Contains(cell + Vector2Int.right);
+        return wallAboveOrBelow && !wallLeftOrRight;
     }
 
     public static ElectricFence CreateElectricFence(int column, int fromRow, int toRow)
