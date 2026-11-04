@@ -14,6 +14,7 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
 
+        
         moveInput = playerInputs.Player.Move.ReadValue<Vector2>();
         if (oldDirection!=moveInput)
         {
