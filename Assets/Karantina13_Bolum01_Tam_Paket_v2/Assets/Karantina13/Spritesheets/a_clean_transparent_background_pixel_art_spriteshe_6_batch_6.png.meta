@@ -1,0 +1,2210 @@
+fileFormatVersion: 2
+guid: 6997e8e39454e3e4ab401a17fb2fd9d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5020591969719973271
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_0
+  - first:
+      213: 6565580227417877838
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_1
+  - first:
+      213: 4548836023860605931
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_2
+  - first:
+      213: -7846501116142100093
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_3
+  - first:
+      213: -7705055640585292605
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_4
+  - first:
+      213: -7171879419693199135
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_5
+  - first:
+      213: -5116509112504134946
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_6
+  - first:
+      213: 7120953013797486299
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_7
+  - first:
+      213: -5235162696942657806
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_8
+  - first:
+      213: -1984769377442119348
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_9
+  - first:
+      213: -5594731805355839879
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_10
+  - first:
+      213: 4200559161389588889
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_11
+  - first:
+      213: -6306713737076376394
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_12
+  - first:
+      213: -7413169445648573436
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_13
+  - first:
+      213: -289346191242701718
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_14
+  - first:
+      213: 6846232402088153150
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_15
+  - first:
+      213: 8578402514419565158
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_16
+  - first:
+      213: 4749776483767680430
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_17
+  - first:
+      213: 1249740846169235901
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_18
+  - first:
+      213: 181490499527098502
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_19
+  - first:
+      213: 816019965036841730
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_20
+  - first:
+      213: -831528525064551132
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_21
+  - first:
+      213: 4507962535840236370
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_22
+  - first:
+      213: -8407517572669515275
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_23
+  - first:
+      213: -8001036822574613264
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_24
+  - first:
+      213: -2590984511104857265
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_25
+  - first:
+      213: -8902027052530788647
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_26
+  - first:
+      213: 7232937611421023431
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_27
+  - first:
+      213: -3421188852131906808
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_28
+  - first:
+      213: -8299981777709034049
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_29
+  - first:
+      213: 5125731070187719722
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_30
+  - first:
+      213: 5810691375278823629
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_31
+  - first:
+      213: 7613828569261418002
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_32
+  - first:
+      213: -8679692844604461914
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_33
+  - first:
+      213: -3209603835896609991
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_34
+  - first:
+      213: -2345790835041827656
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_35
+  - first:
+      213: -6905441724005612249
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_36
+  - first:
+      213: 7537844042589092392
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_37
+  - first:
+      213: -1986676542193154233
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_38
+  - first:
+      213: 4610469775055231437
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_39
+  - first:
+      213: -2848779054583098389
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_40
+  - first:
+      213: -8494261047257797243
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_41
+  - first:
+      213: -703230714255714092
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_42
+  - first:
+      213: -8990725713820060654
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_43
+  - first:
+      213: 4355127189209311863
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_44
+  - first:
+      213: 1779240005822086716
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_45
+  - first:
+      213: 3474575233888119393
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_46
+  - first:
+      213: 2451235206295240594
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_47
+  - first:
+      213: -7906031756228292988
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_48
+  - first:
+      213: -2186957007116011018
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_49
+  - first:
+      213: 4687686553179739602
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_50
+  - first:
+      213: -8011010447859103537
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_51
+  - first:
+      213: 2564271698292656811
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_52
+  - first:
+      213: 1104491688769815603
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_53
+  - first:
+      213: -1164095771033335170
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_54
+  - first:
+      213: 2537352960128042032
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_55
+  - first:
+      213: 3226321426510070996
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_56
+  - first:
+      213: 3332875713294778623
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_57
+  - first:
+      213: -1269360930664693876
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_58
+  - first:
+      213: 5033627702891369999
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_59
+  - first:
+      213: 1927943171982297532
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_60
+  - first:
+      213: -6796350754385909573
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_61
+  - first:
+      213: -8858990039905511862
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_62
+  - first:
+      213: 1111330558733527311
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_63
+  - first:
+      213: -8820732993908696946
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_64
+  - first:
+      213: -7725765413550028331
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_65
+  - first:
+      213: 1861249615611994871
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_66
+  - first:
+      213: -6722403709801661819
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_67
+  - first:
+      213: -2147938480333258209
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_68
+  - first:
+      213: -8623785165594445818
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_69
+  - first:
+      213: -6288286810023101717
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_70
+  - first:
+      213: 6700564938525938124
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_71
+  - first:
+      213: -1732225349152645752
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_72
+  - first:
+      213: -6746440601828997239
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_73
+  - first:
+      213: 7191406075066620861
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_74
+  - first:
+      213: -9153051355656519940
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_75
+  - first:
+      213: 2274304509176168034
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_76
+  - first:
+      213: -6180975974538432490
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_77
+  - first:
+      213: 998428948427661632
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_78
+  - first:
+      213: -6444179203741088616
+    second: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_79
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1036
+        width: 132
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a89aa2436435ab0800000000000000
+      internalID: -5020591969719973271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1164
+        width: 75
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d229f4e60ad1b50800000000000000
+      internalID: 6565580227417877838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1211
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be336bf4346b02f30800000000000000
+      internalID: 4548836023860605931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1163
+        width: 47
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381e4a2bec0ab1390800000000000000
+      internalID: -7846501116142100093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1207
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c43b40d7b4221590800000000000000
+      internalID: -7705055640585292605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_5
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1219
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e090418aad587c90800000000000000
+      internalID: -7171879419693199135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_6
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1183
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2542312128ef8b0800000000000000
+      internalID: -5116509112504134946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_7
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 630
+        width: 614
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde75a1a905b2d260800000000000000
+      internalID: 7120953013797486299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_8
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1195
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe5b53a347f857b0800000000000000
+      internalID: -5235162696942657806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1176
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c414d7854cea474e0800000000000000
+      internalID: -1984769377442119348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_10
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1194
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e6f20b0158b52b0800000000000000
+      internalID: -5594731805355839879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_11
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1197
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991a3a04d426b4a30800000000000000
+      internalID: 4200559161389588889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_12
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1195
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc7c71454d0a78a0800000000000000
+      internalID: -6306713737076376394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_13
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1164
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c56547aa12f1990800000000000000
+      internalID: -7413169445648573436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_14
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1181
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64dddd0c290cfbf0800000000000000
+      internalID: -289346191242701718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_15
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1175
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30db38c814b20f50800000000000000
+      internalID: 6846232402088153150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 487
+        width: 618
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662cb44f2ab9c0770800000000000000
+      internalID: 8578402514419565158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_17
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1159
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadf97deb889ae140800000000000000
+      internalID: 4749776483767680430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_18
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1156
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1a63d9da8f75110800000000000000
+      internalID: 1249740846169235901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_19
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1152
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680cb62d5a8c48200800000000000000
+      internalID: 181490499527098502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_20
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1123
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bc5a1b5d5135b00800000000000000
+      internalID: 816019965036841730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1068
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4254cea4631d574f0800000000000000
+      internalID: -831528525064551132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_22
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1143
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253c689ca008f8e30800000000000000
+      internalID: 4507962535840236370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_23
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1126
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9dd26005f725b80800000000000000
+      internalID: -8407517572669515275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 85
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fcbe93b66b96f090800000000000000
+      internalID: -8001036822574613264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 65
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b4e059059fa0cd0800000000000000
+      internalID: -2590984511104857265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 746
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d61cf88f85a57480800000000000000
+      internalID: -8902027052530788647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_27
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 728
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccff439f6e806460800000000000000
+      internalID: 7232937611421023431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_28
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 704
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bb62f7dde7580d0800000000000000
+      internalID: -3421188852131906808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 684
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb510716c8a80dc80800000000000000
+      internalID: -8299981777709034049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_30
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 679
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cc8b44041422740800000000000000
+      internalID: 5125731070187719722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_31
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 666
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc89beaf409b3a050800000000000000
+      internalID: 5810691375278823629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 646
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2162c837eb0c9a960800000000000000
+      internalID: 7613828569261418002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 646
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ace9d548598b8780800000000000000
+      internalID: -8679692844604461914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_34
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 648
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933c6a301523573d0800000000000000
+      internalID: -3209603835896609991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_35
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 642
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b407fff9a3127fd0800000000000000
+      internalID: -2345790835041827656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_36
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 641
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7250c7fa651fa20a0800000000000000
+      internalID: -6905441724005612249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_37
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 642
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a31d2383dcb9860800000000000000
+      internalID: 7537844042589092392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_38
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 640
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747c9f2f538ed64e0800000000000000
+      internalID: -1986676542193154233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_39
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 606
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc997d545ddabff30800000000000000
+      internalID: 4610469775055231437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_40
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 634
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be350081b8a1778d0800000000000000
+      internalID: -2848779054583098389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_41
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 623
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58de2c005925e1a80800000000000000
+      internalID: -8494261047257797243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_42
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 521
+        width: 19
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8d4a9246f9d36f0800000000000000
+      internalID: -703230714255714092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 7
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214f8c229968a3380800000000000000
+      internalID: -8990725713820060654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 136
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a6778aa15807c30800000000000000
+      internalID: 4355127189209311863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 124
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e7035cb5121b810800000000000000
+      internalID: 1779240005822086716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_46
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 109
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a654124cb283030800000000000000
+      internalID: 3474575233888119393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_47
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 96
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fb824de69840220800000000000000
+      internalID: 2451235206295240594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_48
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 115
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e0e037102284290800000000000000
+      internalID: -7906031756228292988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_49
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 75
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f97cc3603e56a1e0800000000000000
+      internalID: -2186957007116011018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_50
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 111
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d557ac65120e0140800000000000000
+      internalID: 4687686553179739602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_51
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 101
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc84a6b117c23d090800000000000000
+      internalID: -8011010447859103537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_52
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 95
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa4254068f169320800000000000000
+      internalID: 2564271698292656811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_53
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 99
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3340f7ec651f35f00800000000000000
+      internalID: 1104491688769815603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_54
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 93
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a060b501d48dfe0800000000000000
+      internalID: -1164095771033335170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_55
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 99
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034c732e21d763320800000000000000
+      internalID: 2537352960128042032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_56
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d44d5e5e3236cc20800000000000000
+      internalID: 3226321426510070996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_57
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 77
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0467b8dc0c04e20800000000000000
+      internalID: 3332875713294778623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_58
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 97
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fb8fb75f2526ee0800000000000000
+      internalID: -1269360930664693876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_59
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 45
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06d76af9b90bd540800000000000000
+      internalID: 5033627702891369999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_60
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 75
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb90529a91e61ca10800000000000000
+      internalID: 1927943171982297532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_61
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 79
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8aedb5ff28ea1a0800000000000000
+      internalID: -6796350754385909573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_62
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 67
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4655b2ee7b8e0580800000000000000
+      internalID: -8858990039905511862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_63
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 69
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09295d414d3c6f00800000000000000
+      internalID: 1111330558733527311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_64
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 80
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8811878316769580800000000000000
+      internalID: -8820732993908696946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_65
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d90a5b0a4198c490800000000000000
+      internalID: -7725765413550028331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_66
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 63
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2a2e00aac74d910800000000000000
+      internalID: 1861249615611994871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_67
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 51
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58af088517935b2a0800000000000000
+      internalID: -6722403709801661819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_68
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 41
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f120858155df032e0800000000000000
+      internalID: -2147938480333258209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_69
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 46
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608b5792519225880800000000000000
+      internalID: -8623785165594445818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_70
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 47
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea7cca86748bb8a0800000000000000
+      internalID: -6288286810023101717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_71
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 47
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1964b7f403dfc50800000000000000
+      internalID: 6700564938525938124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_72
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 45
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d54d00936e5f7e0800000000000000
+      internalID: -1732225349152645752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_73
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 52
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987c5bd4404df52a0800000000000000
+      internalID: -6746440601828997239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_74
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 47
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb9eeb39b10dc360800000000000000
+      internalID: 7191406075066620861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 33
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe7f277944d9f080800000000000000
+      internalID: -9153051355656519940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_76
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 31
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26eb38cb6e3ff8f10800000000000000
+      internalID: 2274304509176168034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_77
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 27
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610b9607913c83aa0800000000000000
+      internalID: -6180975974538432490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_78
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 33
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0416f74b6d12bdd00800000000000000
+      internalID: 998428948427661632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_79
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8948d0c282da196a0800000000000000
+      internalID: -6444179203741088616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_0: -5020591969719973271
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_1: 6565580227417877838
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_10: -5594731805355839879
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_11: 4200559161389588889
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_12: -6306713737076376394
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_13: -7413169445648573436
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_14: -289346191242701718
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_15: 6846232402088153150
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_16: 8578402514419565158
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_17: 4749776483767680430
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_18: 1249740846169235901
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_19: 181490499527098502
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_2: 4548836023860605931
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_20: 816019965036841730
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_21: -831528525064551132
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_22: 4507962535840236370
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_23: -8407517572669515275
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_24: -8001036822574613264
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_25: -2590984511104857265
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_26: -8902027052530788647
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_27: 7232937611421023431
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_28: -3421188852131906808
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_29: -8299981777709034049
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_3: -7846501116142100093
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_30: 5125731070187719722
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_31: 5810691375278823629
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_32: 7613828569261418002
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_33: -8679692844604461914
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_34: -3209603835896609991
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_35: -2345790835041827656
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_36: -6905441724005612249
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_37: 7537844042589092392
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_38: -1986676542193154233
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_39: 4610469775055231437
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_4: -7705055640585292605
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_40: -2848779054583098389
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_41: -8494261047257797243
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_42: -703230714255714092
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_43: -8990725713820060654
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_44: 4355127189209311863
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_45: 1779240005822086716
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_46: 3474575233888119393
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_47: 2451235206295240594
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_48: -7906031756228292988
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_49: -2186957007116011018
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_5: -7171879419693199135
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_50: 4687686553179739602
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_51: -8011010447859103537
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_52: 2564271698292656811
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_53: 1104491688769815603
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_54: -1164095771033335170
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_55: 2537352960128042032
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_56: 3226321426510070996
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_57: 3332875713294778623
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_58: -1269360930664693876
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_59: 5033627702891369999
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_6: -5116509112504134946
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_60: 1927943171982297532
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_61: -6796350754385909573
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_62: -8858990039905511862
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_63: 1111330558733527311
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_64: -8820732993908696946
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_65: -7725765413550028331
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_66: 1861249615611994871
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_67: -6722403709801661819
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_68: -2147938480333258209
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_69: -8623785165594445818
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_7: 7120953013797486299
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_70: -6288286810023101717
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_71: 6700564938525938124
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_72: -1732225349152645752
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_73: -6746440601828997239
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_74: 7191406075066620861
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_75: -9153051355656519940
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_76: 2274304509176168034
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_77: -6180975974538432490
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_78: 998428948427661632
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_79: -6444179203741088616
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_8: -5235162696942657806
+      a_clean_transparent_background_pixel_art_spriteshe_6_batch_6_9: -1984769377442119348
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

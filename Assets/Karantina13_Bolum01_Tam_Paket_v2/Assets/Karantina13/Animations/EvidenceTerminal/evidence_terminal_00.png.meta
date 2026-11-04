@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 0b143a0e1664a2941aa1ac09a7f36a83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -279426061557791219
+    second: evidence_terminal_00_0
+  - first:
+      213: 9163160062623520176
+    second: evidence_terminal_00_1
+  - first:
+      213: -8968367411310882290
+    second: evidence_terminal_00_2
+  - first:
+      213: 2059957448561505704
+    second: evidence_terminal_00_3
+  - first:
+      213: 5639695997237499688
+    second: evidence_terminal_00_4
+  - first:
+      213: 9101759197159331004
+    second: evidence_terminal_00_5
+  - first:
+      213: 7205872841743356856
+    second: evidence_terminal_00_6
+  - first:
+      213: -5643653657476054224
+    second: evidence_terminal_00_7
+  - first:
+      213: -3875707611544495699
+    second: evidence_terminal_00_8
+  - first:
+      213: -7167742781367838247
+    second: evidence_terminal_00_9
+  - first:
+      213: -653774168465218241
+    second: evidence_terminal_00_10
+  - first:
+      213: 2244759362919937389
+    second: evidence_terminal_00_11
+  - first:
+      213: -8577057623851601019
+    second: evidence_terminal_00_12
+  - first:
+      213: 6762526298847039307
+    second: evidence_terminal_00_13
+  - first:
+      213: -2306016551893205596
+    second: evidence_terminal_00_14
+  - first:
+      213: 711006034397694875
+    second: evidence_terminal_00_15
+  - first:
+      213: 7213154336640482142
+    second: evidence_terminal_00_16
+  - first:
+      213: -1082451803024852643
+    second: evidence_terminal_00_17
+  - first:
+      213: -8944990638944551956
+    second: evidence_terminal_00_18
+  - first:
+      213: 1953474411627434951
+    second: evidence_terminal_00_19
+  - first:
+      213: -7584906247739285484
+    second: evidence_terminal_00_20
+  - first:
+      213: 7882301453154102125
+    second: evidence_terminal_00_21
+  - first:
+      213: -6721159299885704401
+    second: evidence_terminal_00_22
+  - first:
+      213: 4922565519318035650
+    second: evidence_terminal_00_23
+  - first:
+      213: 4828868783271498089
+    second: evidence_terminal_00_24
+  - first:
+      213: -8266912667533454266
+    second: evidence_terminal_00_25
+  - first:
+      213: -2465367283048425963
+    second: evidence_terminal_00_26
+  - first:
+      213: -356339251930576026
+    second: evidence_terminal_00_27
+  - first:
+      213: -5626256887449076240
+    second: evidence_terminal_00_28
+  - first:
+      213: 3326639116187207450
+    second: evidence_terminal_00_29
+  - first:
+      213: 6780377184140368288
+    second: evidence_terminal_00_30
+  - first:
+      213: -9138840500785929506
+    second: evidence_terminal_00_31
+  - first:
+      213: -7862190180106969670
+    second: evidence_terminal_00_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: evidence_terminal_00_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409
+        width: 132
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d068cdb3a774f1cf0800000000000000
+      internalID: -279426061557791219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 537
+        width: 75
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b598b847851a2f70800000000000000
+      internalID: 9163160062623520176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 584
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0210a91b55f98380800000000000000
+      internalID: -8968367411310882290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_3
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 536
+        width: 47
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5bde5a260769c10800000000000000
+      internalID: 2059957448561505704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 580
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827988c01a9344e40800000000000000
+      internalID: 5639695997237499688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_5
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 592
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb493d144c1ff4e70800000000000000
+      internalID: 9101759197159331004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_6
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 556
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b35fb4db27600460800000000000000
+      internalID: 7205872841743356856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 568
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0334ece56e6bda1b0800000000000000
+      internalID: -5643653657476054224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_8
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 549
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9dc903678b63ac0800000000000000
+      internalID: -3875707611544495699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 567
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9133baaef078c90800000000000000
+      internalID: -7167742781367838247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_10
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 570
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35ed4d8bd35de6f0800000000000000
+      internalID: -653774168465218241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_11
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 568
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6533115fbcf62f10800000000000000
+      internalID: 2244759362919937389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_12
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 537
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583f448c88b28f880800000000000000
+      internalID: -8577057623851601019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 554
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fc303e6d159dd50800000000000000
+      internalID: 6762526298847039307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_14
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 548
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4adfb32f9226fffd0800000000000000
+      internalID: -2306016551893205596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 599
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b0f61a8300ed900800000000000000
+      internalID: 711006034397694875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_16
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 532
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b3689f6a54a1460800000000000000
+      internalID: 7213154336640482142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_17
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 529
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59f83af1db5af0f0800000000000000
+      internalID: -1082451803024852643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_18
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 525
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cebf38e08620dd380800000000000000
+      internalID: -8944990638944551956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_19
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 496
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c35ede90a22c1b10800000000000000
+      internalID: 1953474411627434951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 441
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410ebd844fffcb690800000000000000
+      internalID: -7584906247739285484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_21
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 516
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6babcfc86f836d60800000000000000
+      internalID: 7882301453154102125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_22
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 499
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bdf7b1a35a9b2a0800000000000000
+      internalID: -6721159299885704401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 85
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cca98a4247705440800000000000000
+      internalID: 4922565519318035650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 65
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961dedde296930340800000000000000
+      internalID: 4828868783271498089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_25
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 119
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644dd769ab6064d80800000000000000
+      internalID: -8266912667533454266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_26
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 57
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5165705a48149cdd0800000000000000
+      internalID: -2465367283048425963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_27
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 52
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b462d96570e0bf0800000000000000
+      internalID: -356339251930576026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_28
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 19
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fdb0888b258be1b0800000000000000
+      internalID: -5626256887449076240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_29
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 21
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a170240a6a89a2e20800000000000000
+      internalID: 3326639116187207450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_30
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 0
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a999dfff1db81e50800000000000000
+      internalID: 6780377184140368288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_31
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 15
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2a3b3fbf05c2180800000000000000
+      internalID: -9138840500785929506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: evidence_terminal_00_32
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 49
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abdd826dfa3e3e290800000000000000
+      internalID: -7862190180106969670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      evidence_terminal_00_0: -279426061557791219
+      evidence_terminal_00_1: 9163160062623520176
+      evidence_terminal_00_10: -653774168465218241
+      evidence_terminal_00_11: 2244759362919937389
+      evidence_terminal_00_12: -8577057623851601019
+      evidence_terminal_00_13: 6762526298847039307
+      evidence_terminal_00_14: -2306016551893205596
+      evidence_terminal_00_15: 711006034397694875
+      evidence_terminal_00_16: 7213154336640482142
+      evidence_terminal_00_17: -1082451803024852643
+      evidence_terminal_00_18: -8944990638944551956
+      evidence_terminal_00_19: 1953474411627434951
+      evidence_terminal_00_2: -8968367411310882290
+      evidence_terminal_00_20: -7584906247739285484
+      evidence_terminal_00_21: 7882301453154102125
+      evidence_terminal_00_22: -6721159299885704401
+      evidence_terminal_00_23: 4922565519318035650
+      evidence_terminal_00_24: 4828868783271498089
+      evidence_terminal_00_25: -8266912667533454266
+      evidence_terminal_00_26: -2465367283048425963
+      evidence_terminal_00_27: -356339251930576026
+      evidence_terminal_00_28: -5626256887449076240
+      evidence_terminal_00_29: 3326639116187207450
+      evidence_terminal_00_3: 2059957448561505704
+      evidence_terminal_00_30: 6780377184140368288
+      evidence_terminal_00_31: -9138840500785929506
+      evidence_terminal_00_32: -7862190180106969670
+      evidence_terminal_00_4: 5639695997237499688
+      evidence_terminal_00_5: 9101759197159331004
+      evidence_terminal_00_6: 7205872841743356856
+      evidence_terminal_00_7: -5643653657476054224
+      evidence_terminal_00_8: -3875707611544495699
+      evidence_terminal_00_9: -7167742781367838247
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

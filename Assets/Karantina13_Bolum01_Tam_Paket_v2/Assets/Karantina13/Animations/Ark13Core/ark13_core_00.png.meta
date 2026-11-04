@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 472905dacc3c81046bb9b5348c89f0c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5455930776153525728
+    second: ark13_core_00_0
+  - first:
+      213: 4203495239977389355
+    second: ark13_core_00_1
+  - first:
+      213: 6157198431914293936
+    second: ark13_core_00_2
+  - first:
+      213: 2576629911828716430
+    second: ark13_core_00_3
+  - first:
+      213: 1340516248171973843
+    second: ark13_core_00_4
+  - first:
+      213: 7445787858937907531
+    second: ark13_core_00_5
+  - first:
+      213: 8035559688292537005
+    second: ark13_core_00_6
+  - first:
+      213: 9057796606259771167
+    second: ark13_core_00_7
+  - first:
+      213: -6449524419604533920
+    second: ark13_core_00_8
+  - first:
+      213: -6706652562374479867
+    second: ark13_core_00_9
+  - first:
+      213: 359873032176388578
+    second: ark13_core_00_10
+  - first:
+      213: 6564811564199695021
+    second: ark13_core_00_11
+  - first:
+      213: -5407932346115050502
+    second: ark13_core_00_12
+  - first:
+      213: 4977561866203914208
+    second: ark13_core_00_13
+  - first:
+      213: 7173387788792385271
+    second: ark13_core_00_14
+  - first:
+      213: 7242065738963334298
+    second: ark13_core_00_15
+  - first:
+      213: -2825998969140233968
+    second: ark13_core_00_16
+  - first:
+      213: -356991839567231896
+    second: ark13_core_00_17
+  - first:
+      213: -4055359871780532278
+    second: ark13_core_00_18
+  - first:
+      213: -109866918235030896
+    second: ark13_core_00_19
+  - first:
+      213: -3053832977065453280
+    second: ark13_core_00_20
+  - first:
+      213: 5667839778667624548
+    second: ark13_core_00_21
+  - first:
+      213: 4655203833845332077
+    second: ark13_core_00_22
+  - first:
+      213: -93753478382556754
+    second: ark13_core_00_23
+  - first:
+      213: -5758412046721758629
+    second: ark13_core_00_24
+  - first:
+      213: 7572896071907591946
+    second: ark13_core_00_25
+  - first:
+      213: -8936598704415408820
+    second: ark13_core_00_26
+  - first:
+      213: -5778096024713904858
+    second: ark13_core_00_27
+  - first:
+      213: 576262838178494803
+    second: ark13_core_00_28
+  - first:
+      213: -5067261778053918991
+    second: ark13_core_00_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ark13_core_00_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 602
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0227f38add3a844b0800000000000000
+      internalID: -5455930776153525728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 602
+        width: 60
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2dc5e156a0d55a30800000000000000
+      internalID: 4203495239977389355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 581
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0baf7d10a53c27550800000000000000
+      internalID: 6157198431914293936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_3
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 577
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b5234d04702c320800000000000000
+      internalID: 2576629911828716430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 627
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc0ee3ec687a9210800000000000000
+      internalID: 1340516248171973843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_5
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 577
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4909e4bb90c45760800000000000000
+      internalID: 7445787858937907531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_6
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 160
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2102856fa048f60800000000000000
+      internalID: 8035559688292537005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_7
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 128
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f173adbe502c3bd70800000000000000
+      internalID: 9057796606259771167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06da34f16bfae76a0800000000000000
+      internalID: -6449524419604533920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 93
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500b4b3270f2de2a0800000000000000
+      internalID: -6706652562374479867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_10
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 112
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9cd17bd968ef400800000000000000
+      internalID: 359873032176388578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_11
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 95
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2df75f555ea1b50800000000000000
+      internalID: 6564811564199695021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_12
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 71
+        width: 53
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3b7740f2a23f4b0800000000000000
+      internalID: -5407932346115050502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 78
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef5d92252ad31540800000000000000
+      internalID: 4977561866203914208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 37
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe481b003efc8360800000000000000
+      internalID: 7173387788792385271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_15
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 39
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94bfe26b6cf08460800000000000000
+      internalID: 7242065738963334298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_16
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 31
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019b6cc09e808c8d0800000000000000
+      internalID: -2825998969140233968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_17
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 21
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864c1e630d5bb0bf0800000000000000
+      internalID: -356991839567231896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_18
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 98
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfc52ecea778b7c0800000000000000
+      internalID: -4055359871780532278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_19
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ab806be9ca97ef0800000000000000
+      internalID: -109866918235030896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 19
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029d3a6561b9e95d0800000000000000
+      internalID: -3053832977065453280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_21
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 17
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468ff4bcf3638ae40800000000000000
+      internalID: 5667839778667624548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 21
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d683369f83b9a9040800000000000000
+      internalID: 4655203833845332077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_23
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 15
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9ec8845bbe2bef0800000000000000
+      internalID: -93753478382556754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_24
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 14
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ac1dcb0c20610b0800000000000000
+      internalID: -5758412046721758629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_25
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 11
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07c00fbad4581960800000000000000
+      internalID: 7572896071907591946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_26
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 15
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d7a1393d2daf380800000000000000
+      internalID: -8936598704415408820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_27
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62db4d8774410dfa0800000000000000
+      internalID: -5778096024713904858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_28
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35933e68ffb4ff700800000000000000
+      internalID: 576262838178494803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ark13_core_00_29
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe8e27a2487da9b0800000000000000
+      internalID: -5067261778053918991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ark13_core_00_0: -5455930776153525728
+      ark13_core_00_1: 4203495239977389355
+      ark13_core_00_10: 359873032176388578
+      ark13_core_00_11: 6564811564199695021
+      ark13_core_00_12: -5407932346115050502
+      ark13_core_00_13: 4977561866203914208
+      ark13_core_00_14: 7173387788792385271
+      ark13_core_00_15: 7242065738963334298
+      ark13_core_00_16: -2825998969140233968
+      ark13_core_00_17: -356991839567231896
+      ark13_core_00_18: -4055359871780532278
+      ark13_core_00_19: -109866918235030896
+      ark13_core_00_2: 6157198431914293936
+      ark13_core_00_20: -3053832977065453280
+      ark13_core_00_21: 5667839778667624548
+      ark13_core_00_22: 4655203833845332077
+      ark13_core_00_23: -93753478382556754
+      ark13_core_00_24: -5758412046721758629
+      ark13_core_00_25: 7572896071907591946
+      ark13_core_00_26: -8936598704415408820
+      ark13_core_00_27: -5778096024713904858
+      ark13_core_00_28: 576262838178494803
+      ark13_core_00_29: -5067261778053918991
+      ark13_core_00_3: 2576629911828716430
+      ark13_core_00_4: 1340516248171973843
+      ark13_core_00_5: 7445787858937907531
+      ark13_core_00_6: 8035559688292537005
+      ark13_core_00_7: 9057796606259771167
+      ark13_core_00_8: -6449524419604533920
+      ark13_core_00_9: -6706652562374479867
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
