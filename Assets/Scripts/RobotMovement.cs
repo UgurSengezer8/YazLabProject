@@ -48,17 +48,44 @@ public class RobotMovement : MonoBehaviour
     private Vector2[] corners2;
     private PlayerInputs playerInputs;
 
-    public Transform box;
+    Transform box;
+    public Transform player;
+    [Header("Seçilen Kutu")]
+    public GameObject selectedBox; // Tıkladığında kutu burada tutulacak
+
+    [Header("Ayarlar")]
+    public LayerMask boxLayer; // Işının sadece kutulara çarpması için
+
+    private BoxColorChange hoveredBox; // Anlık olarak farenin altında olan kutu
+
+    public int currentMenuMission = 5;
+    private EventBinding<Mission> missionEventBinding;
+    private void OnEnable()
+    {
+        missionEventBinding = new EventBinding<Mission>(SelectMission);
+        EventBus<Mission>.Subscribe(missionEventBinding);
+    }
+    private void OnDisable()
+    {
+        // Obje kapandığında abonelikten çıkıyoruz.
+        EventBus<Mission>.UnSubscribe(missionEventBinding);
+    }
     private void Awake()
     {
         playerInputs = new PlayerInputs();
         playerInputs.Player.Enable();
         playerInputs.Player.Click.performed +=  LeftMouseClicked;
+        playerInputs.Player.RightClick.performed += RightMouseClicked;
 
         _mainCamera = Camera.main;
     }
+    private void SelectMission(Mission mission)
+    {
+        currentMenuMission = mission.id;
+    }
     void Start()
     {
+        currentMenuMission = 5;
         currentDestination = point;
 
         agent = GetComponent<NavMeshAgent>();
@@ -67,38 +94,158 @@ public class RobotMovement : MonoBehaviour
         corners = CalculateBoxPathDynamic();
         corners2 = ProcessingPoints(corners);
         BuildTaskQueueFromCorners(corners2, boxPushPointDistance);*/
+        agent.isStopped = false;
+
+    }
+    private void SelectBox()
+    {
+        if (currentMenuMission ==1)
+        {
+            TaskQueue.Clear();
+
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+            // 2. Farenin olduğu noktaya ışın at
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, boxLayer);
+
+            if (hit.collider != null)
+            {
+                BoxColorChange box = hit.collider.GetComponent<BoxColorChange>();
+
+                // Eğer yeni bir kutunun üzerine geldiysek
+                if (box != null && box != hoveredBox)
+                {
+                    if (hoveredBox != null) hoveredBox.HoverOff(); // Öncekinin rengini sıfırla
+
+                    hoveredBox = box;
+                    hoveredBox.HoverOn(); // Yenisini yeşil yap
+                }
+            }
+            else
+            {
+                // Farenin altında kutu yoksa durumu sıfırla
+                if (hoveredBox != null)
+                {
+                    hoveredBox.HoverOff();
+                    hoveredBox = null;
+                }
+            }
+        }
+        
     }
     private void Update()
     {
-        ProcessQueue();
+        SelectBox();
+        if (currentMenuMission ==2)
+        {
+            if (box!=null)
+            {
+            ProcessQueue();
+
+            }
+            if (hoveredBox!=null)
+            {
+                hoveredBox.HoverOff();
+
+            }
+    
+        }
+
+        if (Vector2.Distance(player.position,transform.position)>2 && currentMenuMission == 0)
+        {
+            if (hoveredBox != null)
+            {
+                hoveredBox.HoverOff();
+
+            }
+            agent.isStopped = false;
+            Debug.Log("çalıştıııııııııııııııııııııııııııııııııı");
+            agent.stoppingDistance = 2;
+            agent.SetDestination(player.position);
+
+        }
+    }
+    public void RightMouseClicked(InputAction.CallbackContext context)
+    {
+        
+
         
     }
     public void LeftMouseClicked(InputAction.CallbackContext context)
     {
-
+        Debug.Log("currrrrrrrrrrrrrrrrrr"+ currentMenuMission);
+        agent.stoppingDistance = 0;
         if (!context.performed) return;
-        var rayhit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
-        if (!rayhit.collider)
+        if (hoveredBox != null)
         {
-            return;
-        }
-        Debug.Log("tıklandı");
-        TaskQueue.Clear();
 
-        Vector2 worldHitPoint = rayhit.point;
-        if (!IsPointOnNavMesh(rayhit.point,surface,0.2f))
+            selectedBox = hoveredBox.gameObject;
+            Debug.Log($"Seçilen GameObject: {selectedBox.name}");
+            box = selectedBox.transform;
+        }
+        if (currentMenuMission ==2 &&box!=null)
         {
-            return;
-        }
-        point.position = worldHitPoint;
-        StopCurrentTask();
+            if (hoveredBox != null)
+            {
+                hoveredBox.HoverOff();
 
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
-        corners = CalculateBoxPathDynamic();
-        corners2 = ProcessingPoints(corners);
-        BuildTaskQueueFromCorners(corners2, boxPushPointDistance);
-        Debug.Log(worldHitPoint);
+            }
+            if (!context.performed) return;
+            var rayhit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
+            if (!rayhit.collider)
+            {
+                return;
+            }
+            Debug.Log("tıklandı");
+            TaskQueue.Clear();
+
+            Vector2 worldHitPoint = rayhit.point;
+            if (!IsPointOnNavMesh(rayhit.point, surface, 0.2f))
+            {
+                return;
+            }
+            point.position = worldHitPoint;
+            StopCurrentTask();
+
+            agent.updateRotation = false;
+            agent.updateUpAxis = false;
+            corners = CalculateBoxPathDynamic();
+            corners2 = ProcessingPoints(corners);
+            if (corners2.Length != 0)
+            {
+                BuildTaskQueueFromCorners(corners2, boxPushPointDistance);
+
+            }
+            Debug.Log(worldHitPoint);
+        }
+        if (currentMenuMission == 3)
+        {
+            if (hoveredBox != null)
+            {
+                hoveredBox.HoverOff();
+
+            }
+            agent.isStopped = false;
+            var rayhit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
+            if (!rayhit.collider)
+            {
+
+                return;
+            }
+            Debug.Log("tıklandı");
+
+            Vector2 worldHitPoint = rayhit.point;
+            if (!IsPointOnNavMesh(rayhit.point, surfaceRobot, 0.2f))
+            {
+                return;
+            }
+            TaskQueue.Clear();
+
+            agent.updateRotation = false;
+            agent.updateUpAxis = false;
+            agent.SetDestination(worldHitPoint);
+        }
+
     }
     public Vector2[] CalculateBoxPathDynamic()
     {
@@ -165,6 +312,10 @@ public class RobotMovement : MonoBehaviour
 
     private Vector2[] ProcessingPoints(Vector2[] corners)
     {
+        if (corners==null)
+        {
+            return new Vector2[0];
+        }
         Vector2 currentPoint;
         Vector2 nextPoint;
         Queue<Vector2> positionQueue = new Queue<Vector2>();

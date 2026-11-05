@@ -11,14 +11,12 @@ namespace Karantina13.UI
 {
     public sealed class CompanionCommandMenu : MonoBehaviour
     {
-        private static readonly string[] OptionLabels = { "1   Takip et", "2   Bekle", "3   Kutuyu it", "4   Buraya git" };
+        private static readonly string[] OptionLabels = { "1   Takip et", "2   Kutu kutuSeç", "3   Kutuyu it", "4   Buraya git" };
         private static readonly Color PanelColor = new Color(0.02f, 0.05f, 0.08f, 0.88f);
         private static readonly Color AccentColor = new Color(0.4f, 0.94f, 1f);
         private static readonly Color ButtonColor = new Color(0.1f, 0.16f, 0.22f, 1f);
         private static readonly Color ButtonHoverColor = new Color(0.16f, 0.42f, 0.5f, 1f);
 
-        [SerializeField] private MonoBehaviour receiverSource;
-        [SerializeField] private Transform player;
 
         private readonly CompanionCommandResolver resolver = new CompanionCommandResolver();
         private IHintDisplay hints;
@@ -26,23 +24,16 @@ namespace Karantina13.UI
         private Font font;
         private bool isPickingTarget;
         private int pickStartFrame;
-        private bool warnedBadSource;
 
         public bool IsOpen => panel != null && panel.activeSelf;
 
-        public void Configure(Transform player, MonoBehaviour receiverSource)
-        {
-            this.player = player;
-            this.receiverSource = receiverSource;
-        }
+        
 
         private void Awake()
         {
             HintDisplay display = GetComponent<HintDisplay>();
             if (display == null) display = FindFirstObjectByType<HintDisplay>();
             hints = display;
-            if (player == null) player = FindPlayer();
-            EnsureEventSystem();
             BuildPanel();
             panel.SetActive(false);
         }
@@ -81,34 +72,47 @@ namespace Karantina13.UI
         {
             SetOpen(false);
 
-            ICompanionCommandReceiver receiver = FindReceiver();
+            //ICompanionCommandReceiver receiver = FindReceiver();
+            /*
             if (receiver == null)
             {
                 ShowHint("Robot komut alıcısı bağlı değil.", 3f);
                 return;
-            }
+            }*/
 
             switch (index)
             {
                 case 0:
-                    receiver.Execute(CompanionCommand.Follow(player));
+                    //receiver.Execute(CompanionCommand.Follow(player));
+                    Debug.Log("beni takip et");
                     ShowHint("Robot: Takip ediyorum.", 2f);
                     break;
                 case 1:
-                    receiver.Execute(CompanionCommand.Wait());
-                    ShowHint("Robot: Burada bekliyorum.", 2f);
+                    //receiver.Execute(CompanionCommand.Wait());
+                    Debug.Log("kutuyu seç");
+
+                    ShowHint("Kutuyu Seç", 2f);
                     break;
                 case 2:
-                    SendPushCommand(receiver);
+                    Debug.Log("kutuyu it");
+
+                    //SendPushCommand(receiver);
                     break;
                 case 3:
                     isPickingTarget = true;
                     pickStartFrame = Time.frameCount;
+                    Debug.Log("kutu seç");
+
                     ShowHint("Hedefi fareyle seç (Esc: iptal)", 10f);
                     break;
             }
+            Mission mission = new Mission
+            {
+                id = index
+            };
+            EventBus<Mission>.Publish(mission);
         }
-
+        /*
         private void SendPushCommand(ICompanionCommandReceiver receiver)
         {
             Vector2 from = receiver.Transform != null ? (Vector2)receiver.Transform.position : Vector2.zero;
@@ -120,7 +124,7 @@ namespace Karantina13.UI
 
             receiver.Execute(CompanionCommand.PushBox(box, goal));
             ShowHint("Robot: Kutuyu itiyorum.", 2f);
-        }
+        }*/
 
         private void UpdateTargetPick(Keyboard keyboard)
         {
@@ -136,19 +140,20 @@ namespace Karantina13.UI
 
             isPickingTarget = false;
             Camera cam = Camera.main;
-            ICompanionCommandReceiver receiver = FindReceiver();
+            //ICompanionCommandReceiver receiver = FindReceiver();
+            /*
             if (cam == null || receiver == null)
             {
                 ShowHint("Robot komut alıcısı bağlı değil.", 3f);
                 return;
-            }
+            }*/
 
             Vector2 screenPoint = mouse.position.ReadValue();
             Vector2 worldPoint = cam.ScreenToWorldPoint(new Vector3(screenPoint.x, screenPoint.y, -cam.transform.position.z));
-            receiver.Execute(CompanionCommand.MoveTo(worldPoint));
+            //receiver.Execute(CompanionCommand.MoveTo(worldPoint));
             ShowHint("Robot: Hedefe gidiyorum.", 2f);
         }
-
+        /*
         private ICompanionCommandReceiver FindReceiver()
         {
             if (receiverSource != null)
@@ -166,13 +171,13 @@ namespace Karantina13.UI
                 if (behaviour is ICompanionCommandReceiver found) return found;
             }
             return null;
-        }
+        }*/
 
         private void ShowHint(string message, float duration)
         {
             if (hints != null) hints.Show(message, duration);
         }
-
+       /*
         private static Transform FindPlayer()
         {
             int playerLayer = GameLayers.PlayerIndex;
@@ -184,13 +189,14 @@ namespace Karantina13.UI
             }
             Debug.LogWarning("CompanionCommandMenu: player not found.");
             return null;
-        }
+        }*/
+       /*
 
         private static void EnsureEventSystem()
         {
             if (FindFirstObjectByType<EventSystem>() != null) return;
             new GameObject("EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));
-        }
+        }*/
 
         private void BuildPanel()
         {

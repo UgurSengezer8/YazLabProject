@@ -16,3 +16,13 @@ public struct PlayerMoveEvent : IEvent
     public Vector2 direction;
     public bool isWalking;
 }
+
+public struct BoxTargetStateEvent : IEvent
+{
+    public string targetID;   
+    public bool open;   
+}
+public struct Mission : IEvent
+{
+    public int id;
+}

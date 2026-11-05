@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fcc9cb349efc6b2408748659389b1b0d
+guid: 8daffc983d4668f42b522e0fbbbfaf14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7909207312670713394
-    second: level01_complete_map_0
+      213: 920425630118699779
+    second: sliding_door_wide_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level01_complete_map_0
+      name: sliding_door_wide_01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1448
-        height: 1086
+        x: 3
+        y: 3
+        width: 634
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec917599ad9dc3290800000000000000
-      internalID: -7909207312670713394
+      spriteID: 303e365eb3206cc00800000000000000
+      internalID: 920425630118699779
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      level01_complete_map_0: -7909207312670713394
+      sliding_door_wide_01_0: 920425630118699779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
