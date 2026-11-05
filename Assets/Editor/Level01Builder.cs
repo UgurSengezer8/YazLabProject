@@ -60,8 +60,14 @@ public static class Level01Builder
     {
         LevelBuildKit.FillRoomFloor(0, MiddleWall - 1, 0, RoomHeight - 1);
         LevelBuildKit.FillRoomFloor(MiddleWall + 1, EastWall - 1, 0, RoomHeight - 1);
-        LevelBuildKit.PlaceFloor(new Vector2Int(MiddleWall, DoorRow), "floor_worn_metal");
-        for (int x = EastWall; x < CorridorEnd; x++) LevelBuildKit.PlaceFloor(new Vector2Int(x, DoorRow), "floor_worn_metal");
+        foreach (Vector2Int cell in LevelBuildKit.DoorCells(new Vector2Int(MiddleWall, DoorRow), true))
+        {
+            LevelBuildKit.PlaceFloor(cell, "floor_worn_metal");
+        }
+        for (int x = EastWall; x < CorridorEnd; x++)
+        {
+            for (int y = DoorRow - 1; y <= DoorRow + 1; y++) LevelBuildKit.PlaceFloor(new Vector2Int(x, y), "floor_worn_metal");
+        }
     }
 
     private static void BuildWalls()
@@ -70,10 +76,10 @@ public static class Level01Builder
         var runs = new List<RectInt>
         {
             Run(-1, -1, EastWall, -1), Run(-1, north, EastWall, north), Run(-1, 0, -1, north - 1),
-            Run(MiddleWall, 0, MiddleWall, DoorRow - 1), Run(MiddleWall, DoorRow + 1, MiddleWall, north - 1),
-            Run(EastWall, 0, EastWall, DoorRow - 1), Run(EastWall, DoorRow + 1, EastWall, north - 1),
-            Run(EastWall + 1, DoorRow - 1, CorridorEnd, DoorRow - 1), Run(EastWall + 1, DoorRow + 1, CorridorEnd, DoorRow + 1),
-            Run(CorridorEnd, DoorRow, CorridorEnd, DoorRow)
+            Run(MiddleWall, 0, MiddleWall, DoorRow - 2), Run(MiddleWall, DoorRow + 2, MiddleWall, north - 1),
+            Run(EastWall, 0, EastWall, DoorRow - 2), Run(EastWall, DoorRow + 2, EastWall, north - 1),
+            Run(EastWall + 1, DoorRow - 2, CorridorEnd, DoorRow - 2), Run(EastWall + 1, DoorRow + 2, CorridorEnd, DoorRow + 2),
+            Run(CorridorEnd, DoorRow - 1, CorridorEnd, DoorRow + 1)
         };
         LevelBuildKit.BuildWalls(runs);
     }
@@ -82,8 +88,8 @@ public static class Level01Builder
 
     private static void BuildPuzzles()
     {
-        SlidingDoor doorA = LevelBuildKit.CreateSlidingDoor("Door A", new Vector2Int(MiddleWall, DoorRow));
-        SlidingDoor doorB = LevelBuildKit.CreateSlidingDoor("Door B", new Vector2Int(EastWall, DoorRow));
+        SlidingDoor doorA = LevelBuildKit.CreateSlidingDoor("Door A", new Vector2Int(MiddleWall, DoorRow), true);
+        SlidingDoor doorB = LevelBuildKit.CreateSlidingDoor("Door B", new Vector2Int(EastWall, DoorRow), true);
         ElectricFence fence = LevelBuildKit.CreateElectricFence(FenceColumn, 0, RoomHeight - 1);
 
         LevelBuildKit.CreatePushableBox("Crate A", new Vector2Int(2, 3));
@@ -113,6 +119,7 @@ public static class Level01Builder
             "Kapıyı aç: Robota kutuyu butona ittir (Q)", "Q tuşuyla robota komut verebilirsin.");
         LevelBuildKit.CreateHintZone("Hint Electric Room", LevelBuildKit.CellCenter(new Vector2Int(MiddleWall + 1, DoorRow)), new Vector2(2f, 6f),
             "Elektriği kes: Robot tellerden geçebilir", "Tellere dokunamam ama robot yalıtımlı, o geçebilir.");
-        LevelBuildKit.CreateLevelExit(new Vector2Int(CorridorEnd - 1, DoorRow), "Level02", "Bölüm 1 tamamlandı!");
+        LevelBuildKit.CreateLevelExit(new Vector2Int(CorridorEnd - 1, DoorRow), "Level02", "Bölüm 1 tamamlandı!",
+            new Vector2(LevelBuildKit.CellSize, LevelBuildKit.CellSize * LevelBuildKit.DoorSpan));
     }
 }
