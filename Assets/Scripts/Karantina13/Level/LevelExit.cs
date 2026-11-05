@@ -13,8 +13,14 @@ namespace Karantina13.Level
 
         [SerializeField] private string nextSceneName;
         [SerializeField] private string completeMessage = "Bölüm tamamlandı!";
+        [SerializeField] private Transform requiredCompanion;
+        [SerializeField] private float companionRadius = 5f;
+        [SerializeField] private string waitMessage = "Robotu burada bırakamam.";
+
+        private const float WaitHintInterval = 3f;
 
         private bool reached;
+        private float lastWaitHint = -10f;
 
         public event System.Action Reached;
 
@@ -24,9 +30,34 @@ namespace Karantina13.Level
             this.completeMessage = completeMessage;
         }
 
+        public void RequireCompanion(Transform companion, float radius, string waitMessage)
+        {
+            requiredCompanion = companion;
+            companionRadius = radius;
+            this.waitMessage = waitMessage;
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
+            TryReach(other);
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            TryReach(other);
+        }
+
+        private void TryReach(Collider2D other)
+        {
             if (reached || !IsPlayer(other)) return;
+            if (!IsCompanionNear())
+            {
+                if (Time.time - lastWaitHint < WaitHintInterval) return;
+                lastWaitHint = Time.time;
+                HintDisplay waitHints = FindFirstObjectByType<HintDisplay>();
+                if (waitHints != null) waitHints.Show(waitMessage, 2.5f);
+                return;
+            }
             reached = true;
 
             HintDisplay hints = FindFirstObjectByType<HintDisplay>();
@@ -35,6 +66,12 @@ namespace Karantina13.Level
 
             if (!string.IsNullOrEmpty(nextSceneName) && Application.CanStreamedLevelBeLoaded(nextSceneName))
                 StartCoroutine(LoadNextScene());
+        }
+
+        private bool IsCompanionNear()
+        {
+            if (requiredCompanion == null) return true;
+            return Vector2.Distance(requiredCompanion.position, transform.position) <= companionRadius;
         }
 
         private IEnumerator LoadNextScene()

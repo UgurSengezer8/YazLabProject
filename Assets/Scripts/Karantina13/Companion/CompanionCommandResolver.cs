@@ -59,6 +59,45 @@ namespace Karantina13.Companion
             return goal != null;
         }
 
+        public bool TryFindGoalNear(Vector2 point, float radius, out IPushTarget goal)
+        {
+            goal = null;
+            float bestDistance = radius * radius;
+            ConsiderGoalsNear(Object.FindObjectsByType<PressurePlate>(FindObjectsSortMode.None), point, ref goal, ref bestDistance);
+            ConsiderGoalsNear(Object.FindObjectsByType<LaserBeam>(FindObjectsSortMode.None), point, ref goal, ref bestDistance);
+            return goal != null;
+        }
+
+        private static void ConsiderGoalsNear<T>(T[] candidates, Vector2 point, ref IPushTarget goal, ref float bestDistance) where T : MonoBehaviour, IPushTarget
+        {
+            foreach (T candidate in candidates)
+            {
+                if (candidate == null || !candidate.isActiveAndEnabled) continue;
+
+                float distance = PickDistance(candidate, point);
+                if (distance >= bestDistance) continue;
+
+                goal = candidate;
+                bestDistance = distance;
+            }
+        }
+
+        private static float PickDistance(MonoBehaviour candidate, Vector2 point)
+        {
+            IPushTarget target = (IPushTarget)candidate;
+            LaserBeam beam = candidate as LaserBeam;
+            if (beam == null) return (target.Position - point).sqrMagnitude;
+
+            Vector2 start = beam.transform.position;
+            Vector2 toGoal = target.Position - start;
+            float length = Mathf.Max(beam.CurrentLength, toGoal.magnitude);
+            if (toGoal.sqrMagnitude < 0.0001f) return (target.Position - point).sqrMagnitude;
+
+            Vector2 axis = toGoal.normalized;
+            float along = Mathf.Clamp(Vector2.Dot(point - start, axis), 0f, length);
+            return (start + axis * along - point).sqrMagnitude;
+        }
+
         private static void ConsiderGoals<T>(T[] candidates, Vector2 boxPosition, ref IPushTarget goal, ref float bestDistance) where T : MonoBehaviour, IPushTarget
         {
             foreach (T candidate in candidates)

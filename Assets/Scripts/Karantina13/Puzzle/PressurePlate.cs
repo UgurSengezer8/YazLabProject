@@ -30,6 +30,12 @@ namespace Karantina13.Puzzle
             this.plateRenderer = plateRenderer;
         }
 
+        public void ConfigureHold(float centerTolerance)
+        {
+            stayPressed = false;
+            this.centerTolerance = centerTolerance;
+        }
+
         private void Awake()
         {
             if (targets == null) return;

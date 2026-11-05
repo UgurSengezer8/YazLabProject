@@ -19,12 +19,16 @@ namespace Karantina13.UI
 
         [SerializeField] private MonoBehaviour receiverSource;
         [SerializeField] private Transform player;
+        [SerializeField] private bool manualPushTargets;
 
         private readonly CompanionCommandResolver resolver = new CompanionCommandResolver();
         private IHintDisplay hints;
         private GameObject panel;
         private Font font;
+        private const float GoalPickRadius = 2.2f;
+
         private bool isPickingTarget;
+        private bool isPickingPushGoal;
         private int pickStartFrame;
         private bool warnedBadSource;
 
@@ -34,6 +38,11 @@ namespace Karantina13.UI
         {
             this.player = player;
             this.receiverSource = receiverSource;
+        }
+
+        public void SetManualPushTargets(bool manual)
+        {
+            manualPushTargets = manual;
         }
 
         private void Awake()
@@ -105,10 +114,19 @@ namespace Karantina13.UI
                     ShowHint("Robot: Burada bekliyorum.", 2f);
                     break;
                 case 2:
-                    SendPushCommand(receiver);
+                    if (!manualPushTargets)
+                    {
+                        SendPushCommand(receiver);
+                        break;
+                    }
+                    isPickingTarget = true;
+                    isPickingPushGoal = true;
+                    pickStartFrame = Time.frameCount;
+                    ShowHint("Kutunun gideceği plakayı ya da lazeri fareyle seç (Esc: iptal)", 10f);
                     break;
                 case 3:
                     isPickingTarget = true;
+                    isPickingPushGoal = false;
                     pickStartFrame = Time.frameCount;
                     ShowHint("Hedefi fareyle seç (Esc: iptal)", 10f);
                     break;
@@ -151,8 +169,32 @@ namespace Karantina13.UI
 
             Vector2 screenPoint = mouse.position.ReadValue();
             Vector2 worldPoint = cam.ScreenToWorldPoint(new Vector3(screenPoint.x, screenPoint.y, -cam.transform.position.z));
+            if (isPickingPushGoal)
+            {
+                SendPushCommand(receiver, worldPoint);
+                return;
+            }
             receiver.Execute(CompanionCommand.MoveTo(worldPoint));
             ShowHint("Robot: Hedefe gidiyorum.", 2f);
+        }
+
+        private void SendPushCommand(ICompanionCommandReceiver receiver, Vector2 pickedPoint)
+        {
+            if (!resolver.TryFindGoalNear(pickedPoint, GoalPickRadius, out IPushTarget goal))
+            {
+                ShowHint("Oraya kutu itilemez. Bir plaka ya da lazer seç.", 2.5f);
+                return;
+            }
+
+            Vector2 from = receiver.Transform != null ? (Vector2)receiver.Transform.position : Vector2.zero;
+            if (!resolver.TryFindNearestBox(from, out IPushable box))
+            {
+                ShowHint("Yakında itilecek kutu yok", 2.5f);
+                return;
+            }
+
+            receiver.Execute(CompanionCommand.PushBox(box, goal));
+            ShowHint("Robot: Kutuyu itiyorum.", 2f);
         }
 
         private ICompanionCommandReceiver FindReceiver()
