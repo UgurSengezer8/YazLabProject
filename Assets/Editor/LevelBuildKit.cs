@@ -637,6 +637,7 @@ public static class LevelBuildKit
         var systems = new GameObject("Systems");
         systems.AddComponent<HintDisplay>();
         systems.AddComponent<CompanionCommandMenu>().Configure(player, null);
+        systems.AddComponent<OutsideVoicePanel>();
         return systems;
     }
 

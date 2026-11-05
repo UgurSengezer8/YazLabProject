@@ -50,6 +50,12 @@ namespace Karantina13.UI
         private void Update()
         {
             Keyboard keyboard = Keyboard.current;
+            if (InputFocus.IsTyping)
+            {
+                if (IsOpen) SetOpen(false);
+                isPickingTarget = false;
+                return;
+            }
             if (isPickingTarget)
             {
                 UpdateTargetPick(keyboard);

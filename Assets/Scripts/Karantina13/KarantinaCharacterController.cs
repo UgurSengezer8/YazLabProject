@@ -1,3 +1,4 @@
+using Karantina13.Core;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -30,7 +31,7 @@ namespace Karantina13
 
         private void Update()
         {
-            MoveInput = ReadMovement(Keyboard.current, controls);
+            MoveInput = InputFocus.IsTyping ? Vector2.zero : ReadMovement(Keyboard.current, controls);
             if (IsMoving)
             {
                 if (Mathf.Abs(MoveInput.x) > Mathf.Abs(MoveInput.y))
