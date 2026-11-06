@@ -1,3 +1,4 @@
+using System.Threading;
 using NavMeshPlus.Components;
 using UnityEngine;
 
@@ -19,6 +20,7 @@ public class DoorScript : MonoBehaviour
 
 
     public GameObject child;
+    private int count;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -48,17 +50,28 @@ public class DoorScript : MonoBehaviour
         }
         if (e.open == true)
         {
+            count++;
             //kapıyı aç
-            open = true;
-            OpenDoor();
             
-            Debug.Log("kapı açıldı");
+            if (e.count <= count && open ==false)
+            {
+                open = true;
+                OpenDoor();
+
+                Debug.Log("kapı açıldı");
+            }
         }
         else
         {
-            open = false;
-            CloseDoor();
-            Debug.Log("kapı kapandı");
+            count--;
+
+            if (count < e.count && open == true)
+            {
+                open = false;
+                CloseDoor();
+                Debug.Log("kapı kapandı");
+            }
+            
 
         }
     }

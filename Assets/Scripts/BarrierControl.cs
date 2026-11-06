@@ -17,6 +17,7 @@ public class BarrierControl : MonoBehaviour
     [Header("NavMesh Settings")]
     public NavMeshSurface surface;
     public NavMeshSurface surfaceRobot;
+    private int count = 0;
 
     private Collider2D doorCollider;
     // private Animator animator; // Eğer animasyon da oynatacaksan burayı açabilirsin
@@ -41,19 +42,28 @@ public class BarrierControl : MonoBehaviour
     private void DoorOpening(BoxTargetStateEvent e)
     {
         if (targetID != e.targetID) return;
-        if (e.open == open) return;
 
         if (e.open)
         {
-            open = true;
-            OpenDoor();
-            Debug.Log("Bariyerler açıldı (Aşağıda)");
+            count++;
+            if (e.count<=count )
+            {
+                open = true;
+                OpenDoor();
+                Debug.Log("Bariyerler açıldı (Aşağıda)");
+            }
+            
         }
         else
         {
-            open = false;
-            CloseDoor();
-            Debug.Log("Bariyerler kapandı (Yukarıda)");
+            count--;
+            if (count<e.count)
+            {
+                open = false;
+                CloseDoor();
+                Debug.Log("Bariyerler kapandı (Yukarıda)");
+            }
+            
         }
     }
 

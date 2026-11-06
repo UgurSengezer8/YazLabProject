@@ -20,7 +20,8 @@ public struct PlayerMoveEvent : IEvent
 public struct BoxTargetStateEvent : IEvent
 {
     public string targetID;   
-    public bool open;   
+    public bool open;
+    public int count;
 }
 public struct Mission : IEvent
 {

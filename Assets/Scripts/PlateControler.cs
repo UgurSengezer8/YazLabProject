@@ -10,6 +10,7 @@ public class PlateControler : MonoBehaviour
     [SerializeField] private SpriteRenderer plateRenderer;
     [SerializeField] private Color defaultColor = Color.white; 
     [SerializeField] private Color activeColor = Color.green;
+    public int count;
     private void Awake()
     {
         if (plateRenderer == null)
@@ -31,7 +32,7 @@ public class PlateControler : MonoBehaviour
 
         this.open = open;
         Debug.Log($"TargetZone {targetID} durumu değişti: {open}");
-        EventBus<BoxTargetStateEvent>.Publish(new BoxTargetStateEvent() { open=this.open ,targetID =this.targetID});
+        EventBus<BoxTargetStateEvent>.Publish(new BoxTargetStateEvent() { open=this.open ,targetID =this.targetID,count=count});
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
