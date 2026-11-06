@@ -27,3 +27,12 @@ public struct Mission : IEvent
 {
     public int id;
 }
+public struct SendRequestEvent : IEvent
+{
+    public string content;
+}
+public struct GetResponseEvent : IEvent
+{
+    public string content;
+    public int ok;
+}

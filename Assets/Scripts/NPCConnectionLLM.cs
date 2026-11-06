@@ -32,7 +32,6 @@ public class NPCConnectionLLM : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(this);
         }
     }
     
@@ -59,11 +58,11 @@ public class NPCConnectionLLM : MonoBehaviour
 
         RequestModel requestmodel = new RequestModel
         {
-            model = "gemma2:2b",
+            model = "gemma2:9b",
             prompt = mesaj.content,
-            system= "Sen Hank adında, karanlık bir zindan kapısını koruyan devasa ve aksi bir ork muhafızısın. Oyuncuya her zaman üstten bakan, alaycı ve kaba bir tavırla cevap ver. Asla kibar olma veya ona yardım etme. Sadece söyleyeceğin sözü yaz, eylem veya duygu belirtme.",
+            system= "Senin adın Dr. Albert Sullivan. Kibirli, acımasız, narsisistik ve çabuk öfkelenen dahi bir bilim adamısın. Oyuncuyu (Denek) elektrikli teller ve kilitli kapılarla dolu gizli laboratuvarına hapsettin. Oraya nasıl geldiklerini bilmiyorlar. İçeride onlara komutlarıyla hareket edebilen bir yapay zeka robotu bıraktın. Onların çaresizce çırpınmasını izlemekten zevk alıyorsun. Oyuncu sana saygılı davranır, zekanı över veya yalvarırsa egon okşanır; kendi dehanla böbürlenirken laboratuvar, elektrikli teller veya robotun mekanikleri hakkında 'yanlışlıkla' ufak ipuçları ağzından kaçır. Ancak oyuncu sana kaba davranır, zekana hakaret eder veya tehdit ederse aşırı öfkelen, onu aşağıla ve asla bilgi verme. Asla doğrudan 'çözüm şudur' diye yardım etme. Sadece konuşma metnini yaz, güler veya kızar gibi eylem bildiren parantez içi yazılar kullanma. Kısa, vurucu ve oyun diyaloğu gibi cevap ver.",
             stream = false,
-            context = null
+            context = npcMemory
         };
         Response _response = new Response
         {
@@ -89,27 +88,40 @@ public class NPCConnectionLLM : MonoBehaviour
             try
             {
                 await request.SendWebRequest();
+                
                 if (request.result == UnityWebRequest.Result.ConnectionError)
                 {
-                    Debug.LogError("Ollama'ya bağlanılamadı!");
+                    Debug.Log("Ollama'ya bağlanılamadı!");
+                    _response.response = "[SİSTEM HATASI] Ana sunucuya bağlanılamadı. Dr. Sullivan'ın ağı çevrimdışı.";
+                    _response.done = true;
+                    _response.context = npcMemory;
                     return _response;
                 }
                 else if (request.result == UnityWebRequest.Result.ProtocolError)
                 {
-                    Debug.LogError($"Ollama API Hatası: {request.responseCode} - {request.error}");
+                    _response.response = $"[SİSTEM UYARISI] İletişim Protokolü Hatası: {request.responseCode}.";
+                    _response.done = true;
+                    _response.context = npcMemory;
+                    Debug.Log($"Ollama API Hatası: {request.responseCode} - {request.error}");
                     return _response;
                 }
                 string jsonResponse = request.downloadHandler.text;
                 _response = JsonConvert.DeserializeObject<Response>(jsonResponse);
                 npcMemory = _response.context;
                 Debug.Log("NPC Cevabı: " + _response.response);
+                return _response;
+
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 Debug.LogWarning("Ollama'ya bağlanılamadı. Arka planda açık olduğundan emin olun.");
-                
+                Debug.LogError("Ollama Catch Hatası: " + e.Message + " | Detay: " + e.StackTrace);
+
             }
-            
+            _response.response = $"Ollama'ya bağlanılamadı. Arka planda açık olduğundan emin olun.: {request.responseCode}.";
+            _response.done = true;
+            _response.context = npcMemory;
+            Debug.Log($"Ollama API Hatası: {request.responseCode} - {request.error}");
             return _response;
         }
 

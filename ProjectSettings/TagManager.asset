@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - box
+  - UISatir
   layers:
   - Default
   - TransparentFX

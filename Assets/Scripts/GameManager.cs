@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    NPCConnectionLLM denem = new NPCConnectionLLM();
     public static GameManager Instance { get; private set; }
     public event EventHandler ButtonPresed;
 
