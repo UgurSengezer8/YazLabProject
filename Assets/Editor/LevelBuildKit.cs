@@ -18,6 +18,7 @@ public static class LevelBuildKit
     public const int SortBase = 100;
     public const float FramePadding = 0.2f;
 
+    private const string MainMenuScenePath = "Assets/Scenes/MainMenu.unity";
     private const string MaterialPath = "Assets/Karantina13Test/KarantinaSprites.mat";
     private const string PlayerPrefabPath = "Assets/Karantina13Test/Prefabs/Player.prefab";
     private const string RobotPrefabPath = "Assets/Karantina13Test/Prefabs/Robot.prefab";
@@ -78,6 +79,13 @@ public static class LevelBuildKit
             if (added.Add(scene.path)) scenes.Add(scene);
         }
         scenes.Insert(Mathf.Clamp(index, 0, scenes.Count), new EditorBuildSettingsScene(scenePath, true));
+        int menu = scenes.FindIndex(s => s.path == MainMenuScenePath);
+        if (menu > 0)
+        {
+            EditorBuildSettingsScene first = scenes[menu];
+            scenes.RemoveAt(menu);
+            scenes.Insert(0, first);
+        }
         EditorBuildSettings.scenes = scenes.ToArray();
     }
 
