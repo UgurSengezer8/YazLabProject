@@ -115,7 +115,7 @@ public class NPCConnectionLLM : MonoBehaviour
             catch (Exception e)
             {
                 Debug.LogWarning("Ollama'ya bağlanılamadı. Arka planda açık olduğundan emin olun.");
-                Debug.LogError("Ollama Catch Hatası: " + e.Message + " | Detay: " + e.StackTrace);
+                Debug.Log("Ollama Catch Hatası: " + e.Message + " | Detay: " + e.StackTrace);
 
             }
             _response.response = $"Ollama'ya bağlanılamadı. Arka planda açık olduğundan emin olun.: {request.responseCode}.";
